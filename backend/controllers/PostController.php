@@ -51,7 +51,7 @@ class PostController extends Controller
      */
     public function actionView($id)
     {
-        //缺点：1:无法使用于多种数据库，2:使用数组保存数据，不安全，3：如果不消失会留下SQL注入这种不安全的因数
+        //缺点：1:无法使用于多种数据库，2:使用数组保存数据，不安全，3：如果不消失会留下SQL注入这种不安全的因数 ;建议不适用这种方式
         //        $post = Yii::$app->db->createCommand('select * from post where id=:id and status=:status')
         //            ->bindValue(':id',$_GET['id'])
         //            ->bindValue(':status',$_GET['status'])
