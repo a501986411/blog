@@ -14,9 +14,10 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'content')->textarea(['rows' => 6]) ?>
+    <?= $form->field($model, 'description')->textarea(['rows' => 4,'col'=>20]) ?>
+    <?= $form->field($model, 'content')->textarea(['rows' => 30]) ?>
 
-    <?= $form->field($model, 'tags')->textarea(['rows' => 6]) ?>
+    <?= $form->field($model, 'tags')->textarea(['rows' =>2]) ?>
 
     <?= $form->field($model, 'status')->textInput() ?>
 

@@ -19,7 +19,7 @@ class PostSearch extends Post
     {
         return [
             [['id', 'status', 'create_time', 'update_time', 'author_id'], 'integer'],
-            [['title', 'content', 'tags'], 'safe'],
+            [['title', 'description', 'tags'], 'safe'],
         ];
     }
 
@@ -67,7 +67,7 @@ class PostSearch extends Post
         ]);
 
         $query->andFilterWhere(['like', 'title', $this->title])
-            ->andFilterWhere(['like', 'content', $this->content])
+            ->andFilterWhere(['like', 'description', $this->description])
             ->andFilterWhere(['like', 'tags', $this->tags]);
 
         return $dataProvider;

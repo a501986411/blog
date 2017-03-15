@@ -45,13 +45,13 @@ class PostController extends Controller
     }
 
     /**
-     * Displays a single Post model.
-     * @param integer $id
+     * 查看文章
+     * @param integer $id 文章id
      * @return mixed
      */
     public function actionView($id)
     {
-        //缺点：1:无法使用于多种数据库，2:使用数组保存数据，不安全，3：如果不消失会留下SQL注入这种不安全的因数 ;建议不适用这种方式
+        //缺点：1:无法适用于多种数据库，2:使用数组保存数据，不安全，3：如果不小心会留下SQL注入这种不安全的因数 ;建议不适用这种方式
         //        $post = Yii::$app->db->createCommand('select * from post where id=:id and status=:status')
         //            ->bindValue(':id',$_GET['id'])
         //            ->bindValue(':status',$_GET['status'])
@@ -63,8 +63,8 @@ class PostController extends Controller
     }
 
     /**
-     * Creates a new Post model.
-     * If creation is successful, the browser will be redirected to the 'view' page.
+     * 创建文章
+     * 如果创建成功，页面将跳转到文章查看页面
      * @return mixed
      */
     public function actionCreate()
@@ -81,9 +81,9 @@ class PostController extends Controller
     }
 
     /**
-     * Updates an existing Post model.
-     * If update is successful, the browser will be redirected to the 'view' page.
-     * @param integer $id
+     * 修改已存在的文章
+     * 如果修改成功，页面将跳转到文章查看页面
+     * @param integer $id 文章id
      * @return mixed
      */
     public function actionUpdate($id)
@@ -100,8 +100,8 @@ class PostController extends Controller
     }
 
     /**
-     * Deletes an existing Post model.
-     * If deletion is successful, the browser will be redirected to the 'index' page.
+     * 删除一篇文章
+     * 如果删除成功，跳转到文章首页
      * @param integer $id
      * @return mixed
      */
@@ -124,7 +124,7 @@ class PostController extends Controller
         if (($model = Post::findOne($id)) !== null) {
             return $model;
         } else {
-            throw new NotFoundHttpException('The requested page does not exist.');
+            throw new NotFoundHttpException('请求的页面不存在');
         }
     }
 }
