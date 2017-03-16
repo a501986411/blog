@@ -58,4 +58,27 @@ class Post extends \yii\db\ActiveRecord
             'author_id' => '作者',
         ];
     }
+
+    /**
+     * 获取文章状态
+     * @access public
+     * @return \yii\db\ActiveQuery
+     * @author knight
+     */
+    public function getPStatus()
+    {
+        // 文章和状态通过 poststatus.id -> status关联建立一对一关系
+       return $this->hasOne(Poststatus::className(),['id'=>'status']);
+    }
+
+    /**
+     * 建立文章与作者之间的关系（多对一）
+     * @access public
+     * @return \yii\db\ActiveQuery
+     * @author knight
+     */
+    public function getAuthor()
+    {
+        return $this->hasOne(User::className(),['id'=>'author_id']);
+    }
 }

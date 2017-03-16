@@ -34,7 +34,7 @@ class Comment extends \yii\db\ActiveRecord
         return [
             [['content', 'status', 'create_time', 'userid', 'email', 'url', 'post_id'], 'required'],
             [['content'], 'string'],
-            [['status', 'create_time', 'userid', 'post_id'], 'integer'],
+            [['status', 'userid', 'post_id'], 'integer'],
             [['email', 'url'], 'string', 'max' => 128],
         ];
     }
@@ -46,13 +46,29 @@ class Comment extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'content' => 'Content',
-            'status' => 'Status',
-            'create_time' => 'Create Time',
-            'userid' => 'Userid',
-            'email' => 'Email',
+            'content' => '评论内容',
+            'status' => '状态',
+            'create_time' => '评论时间',
+            'userid' => '用户',
+            'email' => '邮箱',
             'url' => 'Url',
-            'post_id' => 'Post ID',
+            'post_id' => '文章',
         ];
+    }
+
+    /**
+     * 建立评论与评论状态的关联关系
+     * @access public
+     * @return \yii\db\ActiveQuery
+     * @author knight
+     */
+    public function getCStatus()
+    {
+        return $this->hasOne(CommentStatus::className(),['id'=>'status']);
+    }
+
+    public function getPost()
+    {
+        return $this->hasOne(Post::className(),['id'=>'post_id']);
     }
 }

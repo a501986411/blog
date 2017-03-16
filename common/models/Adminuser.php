@@ -43,11 +43,11 @@ class Adminuser extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'username' => 'Username',
-            'nickname' => 'Nickname',
-            'password' => 'Password',
-            'email' => 'Email',
-            'profile' => 'Profile',
+            'username' => '用户名',
+            'nickname' => '昵称',
+            'password' => '密码',
+            'email' => '电子邮箱',
+            'profile' => '描述信息',
         ];
     }
 }

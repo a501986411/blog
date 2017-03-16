@@ -31,11 +31,21 @@ $this->params['breadcrumbs'][] = $this->title;
             'description:ntext',
             'content:ntext',
             'tags:ntext',
-            'status',
+//            'status',
+            [
+                'label' => '状态',
+                'value' => $model->pStatus->name
+            ],
             'create_time:datetime',
             'update_time:datetime',
-            'author_id',
+            'attributes' =>[
+                'label'=>'作者',
+                'value'=>$model->author->username
+            ],
+//            'author_id',
         ],
+        'template'=>'<tr><th style="width: 100px;text-align: center;">{label}</th><td style="text-align: center;">{value}</td></tr>',
+        'options'=>['class' => 'table table-striped table-bordered detail-view']
     ]) ?>
 
 </div>
