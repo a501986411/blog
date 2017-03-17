@@ -19,6 +19,7 @@ use Yii;
  */
 class Post extends \yii\db\ActiveRecord
 {
+    private $_oldTag;
     /**
      * @inheritdoc
      */
@@ -80,5 +81,40 @@ class Post extends \yii\db\ActiveRecord
     public function getAuthor()
     {
         return $this->hasOne(User::className(),['id'=>'author_id']);
+    }
+
+    /**
+     * @access public
+     * @return void
+     * @author knight
+     */
+    public function afterFind()
+    {
+        parent::afterFind();
+        $this->_oldTag = $this->tags;
+    }
+
+    /**
+     * 保存后置方法
+     * @access public
+     * @return void
+     * @author knight
+     */
+    public function afterSave($insert, $changedAttributes)
+    {
+        parent::afterSave($insert, $changedAttributes);
+        Tag::updateFrequency($this->_oldTag,$this->tags);
+    }
+
+    /**
+     * 删除后置方法
+     * @access public
+     * @return void
+     * @author knight
+     */
+    public function afterDelete()
+    {
+        parent::afterDelete();
+        Tag::updateFrequency($this->_oldTag,'');
     }
 }
