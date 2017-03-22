@@ -34,10 +34,10 @@ class Post extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['title', 'content', 'tags', 'status', 'create_time', 'update_time', 'author_id'], 'required'],
-            [['description'],'string','max'=>255],
+            [['title', 'content', 'tags', 'status','author_id'], 'required'],
+            [['description'], 'string', 'max' => 255],
             [['content', 'tags'], 'string'],
-            [['status', 'create_time', 'update_time', 'author_id'], 'integer'],
+            [['status','author_id'], 'integer'],
             [['title'], 'string', 'max' => 128],
         ];
     }
@@ -48,15 +48,18 @@ class Post extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => 'ID',
-            'title' => '标题',
+            'id'          => 'ID',
+            'title'       => '标题',
             'description' => '文章描述',
-            'content' => '文章内容',
-            'tags' => '标签',
-            'status' => '状态',
+            'content'     => '文章内容',
+            'tags'        => '标签',
+            'status'      => '状态',
             'create_time' => '创建时间',
             'update_time' => '修改时间',
-            'author_id' => '作者',
+            'author_id'   => '作者',
+            'pStatus.name'=>'状态',
+            'author.username'=>'作者'
+
         ];
     }
 
@@ -69,18 +72,18 @@ class Post extends \yii\db\ActiveRecord
     public function getPStatus()
     {
         // 文章和状态通过 poststatus.id -> status关联建立一对一关系
-       return $this->hasOne(Poststatus::className(),['id'=>'status']);
+        return $this->hasOne(Poststatus::className(), ['id' => 'status']);
     }
 
     /**
-     * 建立文章与作者之间的关系（多对一）
+     * 建立文章与作者之间的关系（一对一）
      * @access public
      * @return \yii\db\ActiveQuery
      * @author knight
      */
     public function getAuthor()
     {
-        return $this->hasOne(User::className(),['id'=>'author_id']);
+        return $this->hasOne(User::className(), ['id' => 'author_id']);
     }
 
     /**
@@ -94,6 +97,7 @@ class Post extends \yii\db\ActiveRecord
         $this->_oldTag = $this->tags;
     }
 
+
     /**
      * 保存后置方法
      * @access public
@@ -103,7 +107,27 @@ class Post extends \yii\db\ActiveRecord
     public function afterSave($insert, $changedAttributes)
     {
         parent::afterSave($insert, $changedAttributes);
-        Tag::updateFrequency($this->_oldTag,$this->tags);
+        Tag::updateFrequency($this->_oldTag, $this->tags);
+    }
+
+    /**
+     * 保存前操作
+     * @access public
+     * @param bool $insert
+     * @return void
+     * @author knight
+     */
+    public function beforeSave($insert)
+    {
+        if (parent::beforeSave($insert)) {
+            if ($insert) { //插入数据
+                $this->create_time = time();
+            }
+            $this->update_time = time();
+            return true;
+        } else {
+            return false;
+        }
     }
 
     /**
@@ -115,6 +139,31 @@ class Post extends \yii\db\ActiveRecord
     public function afterDelete()
     {
         parent::afterDelete();
-        Tag::updateFrequency($this->_oldTag,'');
+        Tag::updateFrequency($this->_oldTag, '');
+    }
+
+    /**
+     * get方法设置新增文章状态
+     * @access public
+     * @return void
+     * @author knight
+     */
+    public function getAllStatus()
+    {
+        $list = (new \yii\db\Query())
+            ->select(['name', 'id'])
+            ->from('poststatus')
+            ->indexBy('id')
+            ->column();
+        return $list;
+    }
+
+    public function getAllAuthor()
+    {
+        return (new \yii\db\Query())
+                ->select(['username','id'])
+                ->from('user')
+                ->indexBy('id')
+                ->column();
     }
 }

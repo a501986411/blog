@@ -12,13 +12,15 @@ use common\models\Post;
  */
 class PostSearch extends Post
 {
+    public $pStatus;
+    public $author;
     /**
      * @inheritdoc
      */
     public function rules()
     {
         return [
-            [['id', 'status', 'create_time', 'update_time', 'author_id'], 'integer'],
+            [['id', 'status', 'create_time', 'update_time'], 'integer'],
             [['title', 'description', 'tags'], 'safe'],
         ];
     }
@@ -42,12 +44,28 @@ class PostSearch extends Post
     public function search($params)
     {
         $query = Post::find();
-
+        $query->joinWith(['pStatus','author']);
         // add conditions that should always apply here
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
+            'pagination'=>[
+                'pageSize'=>2
+            ],
+            'sort'=>[
+                'attributes'=>['title','description','tags','poststatus.name'],
+                'defaultOrder'=>'id'
+            ]
         ]);
+
+//        $dataProvider->setSort([
+//            'attributes'=>[
+//                'pStatus'=>[
+//                    'asc'=>['poststatus.id','SORT_ASC'],
+//                    'desc'=>['poststatus.id','SORT_DESC']
+//                ]
+//            ]
+//        ]);
 
         $this->load($params);
 
@@ -69,7 +87,6 @@ class PostSearch extends Post
         $query->andFilterWhere(['like', 'title', $this->title])
             ->andFilterWhere(['like', 'description', $this->description])
             ->andFilterWhere(['like', 'tags', $this->tags]);
-
         return $dataProvider;
     }
 }

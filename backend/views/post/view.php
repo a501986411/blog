@@ -29,15 +29,24 @@ $this->params['breadcrumbs'][] = $this->title;
         'attributes' => [
             'title',
             'description:ntext',
-            'content:ntext',
             'tags:ntext',
 //            'status',
             [
                 'label' => '状态',
                 'value' => $model->pStatus->name
             ],
-            'create_time:datetime',
-            'update_time:datetime',
+            [
+                'attribute'=>'create_time',
+                'format'=>['date','php:Y-m-d H:i:s']
+            ],
+            [
+                'attribute'=>'update_time',
+//                'value'=>Yii::$app->formatter->asDate($model->update_time,"php:Y-m-d H:i:s") //调用yii的formatter方法进行格式化
+//                'value'=>date('Y-m-d H:i:s',$model->update_time) //调用PHP函数或者自定义函数 进行格式化
+                  'value'=>function($model){
+                      return date('Y-m-d H:i:s',$model->update_time);
+                  }
+            ],
             'attributes' =>[
                 'label'=>'作者',
                 'value'=>$model->author->username

@@ -70,7 +70,6 @@ class PostController extends Controller
     public function actionCreate()
     {
         $model = new Post();
-
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
@@ -89,7 +88,6 @@ class PostController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
-
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
@@ -127,4 +125,5 @@ class PostController extends Controller
             throw new NotFoundHttpException('请求的页面不存在');
         }
     }
+
 }
