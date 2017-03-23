@@ -20,17 +20,28 @@ $this->params['breadcrumbs'][] = $this->title;
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
+            [
+                'class' => 'yii\grid\SerialColumn'
+            ],
             'title',
             'tags:ntext',
-            'description:ntext',
             [
-                'attribute'=>'author.username',
+                'attribute'=>'author_id',
+                'value' => 'author.username',
             ],
             [
-              'attribute'=>'pStatus.name',
+              'attribute'=>'status',
+              'filter' => Html::dropDownList('PostSearch[status]',[],$searchModel->getAllStatus(),['prompt'=>'','class'=>'form-control']),
+              'value'  =>'pStatus.name'
+            ],
+            [
+                'attribute'=>'update_time',
+                'format'=>['date','php:Y-m-d H:i:s']
             ],
             ['class' => 'yii\grid\ActionColumn'],
         ],
+        'emptyText'=>'当前没有文章',
+        'emptyTextOptions'=>['style'=>'color:red;font-weight:bold;'],
+        'showOnEmpty'=>false,
     ]); ?>
 </div>

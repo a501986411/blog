@@ -12,16 +12,14 @@ use common\models\Post;
  */
 class PostSearch extends Post
 {
-    public $pStatus;
-    public $author;
     /**
      * @inheritdoc
      */
     public function rules()
     {
         return [
-            [['id', 'status', 'create_time', 'update_time'], 'integer'],
-            [['title', 'description', 'tags'], 'safe'],
+            [['status'], 'integer'],
+            [['title', 'description', 'tags','author_id','update_time'], 'safe'],
         ];
     }
 
@@ -53,40 +51,31 @@ class PostSearch extends Post
                 'pageSize'=>2
             ],
             'sort'=>[
-                'attributes'=>['title','description','tags','poststatus.name'],
-                'defaultOrder'=>'id'
+                'defaultOrder'=>[
+                    'update_time'=>SORT_DESC
+                ]
             ]
         ]);
-
-//        $dataProvider->setSort([
-//            'attributes'=>[
-//                'pStatus'=>[
-//                    'asc'=>['poststatus.id','SORT_ASC'],
-//                    'desc'=>['poststatus.id','SORT_DESC']
-//                ]
-//            ]
-//        ]);
-
         $this->load($params);
 
         if (!$this->validate()) {
-            // uncomment the following line if you do not want to return any records when validation fails
-            // $query->where('0=1');
-            return $dataProvider;
+            // 没有符合条件的数据是 可原样返回 或者返回空数据
+            // $query->where('0=1'); //返回空数据
+            return $dataProvider; //原样返回
         }
 
-        // grid filtering conditions
+        // 搜索过滤 精确查找
         $query->andFilterWhere([
             'id' => $this->id,
-            'status' => $this->status,
-            'create_time' => $this->create_time,
+            'post.status' => $this->status,
             'update_time' => $this->update_time,
-            'author_id' => $this->author_id,
         ]);
 
+        //模糊匹配
         $query->andFilterWhere(['like', 'title', $this->title])
             ->andFilterWhere(['like', 'description', $this->description])
-            ->andFilterWhere(['like', 'tags', $this->tags]);
+            ->andFilterWhere(['like', 'tags', $this->tags])
+            ->andFilterWhere(['like','user.username',$this->author_id]);
         return $dataProvider;
     }
 }
