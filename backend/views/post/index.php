@@ -31,7 +31,7 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
             [
               'attribute'=>'status',
-              'filter' => Html::dropDownList('PostSearch[status]',[],$searchModel->getAllStatus(),['prompt'=>'','class'=>'form-control']),
+              'filter' => $searchModel->getAllStatus(),
               'value'  =>'pStatus.name'
             ],
             [
