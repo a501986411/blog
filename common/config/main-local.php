@@ -19,3 +19,13 @@ return [
         ],
     ],
 ];
+
+//调试方法
+function debug($data){
+    header("Content-type: text/html; charset=utf-8");
+        echo '<pre>' . PHP_EOL;
+        echo '[type] ' . gettype($data) . PHP_EOL;
+        echo '[data] ';
+        print_r($data);
+        exit;
+}

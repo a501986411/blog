@@ -21,6 +21,7 @@ $this->params['breadcrumbs'][] = $this->title;
         'filterModel' => $searchModel,
         'columns' => [
             [
+                'header'=>'序号',
                 'class' => 'yii\grid\SerialColumn'
             ],
             'title',
@@ -38,7 +39,10 @@ $this->params['breadcrumbs'][] = $this->title;
                 'attribute'=>'update_time',
                 'format'=>['date','php:Y-m-d H:i:s']
             ],
-            ['class' => 'yii\grid\ActionColumn'],
+            [
+                'header'=>'操作',
+                'class' => 'yii\grid\ActionColumn'
+            ],
         ],
         'emptyText'=>'当前没有文章',
         'emptyTextOptions'=>['style'=>'color:red;font-weight:bold;'],

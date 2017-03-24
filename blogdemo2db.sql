@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50617
 File Encoding         : 65001
 
-Date: 2017-03-23 18:02:45
+Date: 2017-03-24 17:52:15
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -53,7 +53,7 @@ CREATE TABLE `comment` (
 -- ----------------------------
 -- Records of comment
 -- ----------------------------
-INSERT INTO `comment` VALUES ('1', '这篇文章写得不错，加油！！', '1', '2017', '1', '501986411@qq.com', 'www.baidu.com', '1');
+INSERT INTO `comment` VALUES ('1', '这篇文章写得不错，加油！！', '3', '2017', '1', '501986411@qq.com', 'www.baidu.com', '1');
 
 -- ----------------------------
 -- Table structure for commentstatus

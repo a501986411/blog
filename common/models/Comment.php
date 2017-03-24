@@ -71,4 +71,9 @@ class Comment extends \yii\db\ActiveRecord
     {
         return $this->hasOne(Post::className(),['id'=>'post_id']);
     }
+
+    public function getUser()
+    {
+        return $this->hasOne(User::className(),['id'=>'userid']);
+    }
 }

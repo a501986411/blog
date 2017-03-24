@@ -101,8 +101,13 @@ class CommentController extends Controller
      */
     public function actionDelete($id)
     {
-        $this->findModel($id)->delete();
-
+        $model = $this->findModel($id);
+        $model->status = 3;
+        if($model->save()){
+            return $this->redirect(['index']);
+        } else {
+            $this->render('index');
+        }
         return $this->redirect(['index']);
     }
 
@@ -119,6 +124,24 @@ class CommentController extends Controller
             return $model;
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
+        }
+    }
+
+    /**
+     * 用户评论审核操作
+     * @access public
+     * @param $id
+     * @return void
+     * @author knight
+     */
+    public function actionApprove($id)
+    {
+        $model = $this->findModel($id);
+        $model->status = 2;
+        if($model->save()){
+            $this->redirect(['index']);
+        } else {
+            $this->render('index',['model'=>$model]);
         }
     }
 }
