@@ -106,9 +106,8 @@ class CommentController extends Controller
         if($model->save()){
             return $this->redirect(['index']);
         } else {
-            $this->render('index');
+            return $this->render('index');
         }
-        return $this->redirect(['index']);
     }
 
     /**
@@ -137,11 +136,8 @@ class CommentController extends Controller
     public function actionApprove($id)
     {
         $model = $this->findModel($id);
-        $model->status = 2;
-        if($model->save()){
-            $this->redirect(['index']);
-        } else {
-            $this->render('index',['model'=>$model]);
+        if($model->approve()){
+            return $this->redirect(['index']);
         }
     }
 }

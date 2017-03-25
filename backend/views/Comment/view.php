@@ -29,17 +29,20 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             'content:ntext',
-            'attributes'=>[
+            [
                 'label'=>'状态',
                 'value'=>$model->cStatus->name
             ],
             'create_time:datetime',
-            'userid',
+            [
+                'label'=>'作者',
+                'attribute'=>'user.username',
+            ],
             'email:email',
             'url:url',
-            'attributes'=>[
-                'label'=>'文章',
-                'value'=>$model->post->title
+            [
+                'label'=>'文章标题',
+                'attribute'=>'post.title'
             ],
         ],
     ]) ?>

@@ -12,14 +12,19 @@ use common\models\Comment;
  */
 class CommentSearch extends Comment
 {
+    public function attributes()
+    {
+        return array_merge(parent::attributes(),['user.username','post.title']); //改搜索类添加关联字段属性用户搜索
+    }
+
     /**
      * @inheritdoc
      */
     public function rules()
     {
         return [
-            [['id', 'status', 'create_time', 'userid', 'post_id'], 'integer'],
-            [['content', 'email', 'url'], 'safe'],
+            [['id', 'status', ], 'integer'],
+            [['content', 'email', 'url','post.title','user.username'], 'safe'],
         ];
     }
 
@@ -42,12 +47,32 @@ class CommentSearch extends Comment
     public function search($params)
     {
         $query = Comment::find();
-
+        $query->joinWith('user');
+        $query->joinWith('post');
         // add conditions that should always apply here
 
         $dataProvider = new ActiveDataProvider([
             'query' => $query,
+             'pagination'=>[
+                 'pageSize'=>2
+             ],
+            'sort'=>[
+                'defaultOrder'=>[
+                    'status'=>SORT_ASC,
+                    'id'    =>SORT_DESC
+                    ]
+             ]
         ]);
+
+        $dataProvider->sort->attributes['user.username'] = [
+            'asc'=>['user.username'=>SORT_ASC],
+            'desc'=>['user.username'=>SORT_DESC],
+        ];
+        $dataProvider->sort->attributes['post.title'] = [
+            'asc'=>['post.title'=>SORT_ASC],
+            'desc'=>['post.title'=>SORT_DESC],
+        ];
+
         $this->load($params);
 
         if (!$this->validate()) {
@@ -59,16 +84,12 @@ class CommentSearch extends Comment
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
-            'status' => $this->status,
-            'create_time' => $this->create_time,
-            'userid' => $this->userid,
-            'post_id' => $this->post_id,
+            'comment.status' => $this->status,
         ]);
 
         $query->andFilterWhere(['like', 'content', $this->content])
-            ->andFilterWhere(['like', 'email', $this->email])
-            ->andFilterWhere(['like', 'url', $this->url]);
-
+            ->andFilterWhere(['like','post.title',$this->getAttribute('post.title')])
+            ->andFilterWhere(['like','user.username',$this->getAttribute('user.username')]);
         return $dataProvider;
     }
 }

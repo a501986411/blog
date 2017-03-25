@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50617
 File Encoding         : 65001
 
-Date: 2017-03-24 17:52:15
+Date: 2017-03-25 17:59:52
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -27,12 +27,13 @@ CREATE TABLE `adminuser` (
   `email` varchar(128) CHARACTER SET latin1 NOT NULL,
   `profile` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='管理员用户表';
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COMMENT='管理员用户表';
 
 -- ----------------------------
 -- Records of adminuser
 -- ----------------------------
 INSERT INTO `adminuser` VALUES ('1', 'admin', '噢,我想多了', 'chenhailong', '501986411@qq.com', 'ssdsdsddssdds');
+INSERT INTO `adminuser` VALUES ('2', 'admin', 'admin', 'admin', '501986411@qq.com', '的法律手段');
 
 -- ----------------------------
 -- Table structure for comment
@@ -48,12 +49,14 @@ CREATE TABLE `comment` (
   `url` varchar(128) NOT NULL,
   `post_id` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of comment
 -- ----------------------------
-INSERT INTO `comment` VALUES ('1', '这篇文章写得不错，加油！！', '3', '2017', '1', '501986411@qq.com', 'www.baidu.com', '1');
+INSERT INTO `comment` VALUES ('1', '这篇文章写得不错，加油！！', '1', '2017', '1', '501986411@qq.com', 'www.baidu.com', '1');
+INSERT INTO `comment` VALUES ('2', '不错的文章不错的文章不错的文章不错的文章不错的文章不错的文章不错的文章不错的文章不错的文章', '3', '1542154525', '2', '501986411@qq.com', 'www.baidu.com', '2');
+INSERT INTO `comment` VALUES ('3', '不错的文章不错的文章不错的文章不错的文章不错的文章不错的文章不错的文章不错的文章不错的文章', '2', '1542154525', '2', '501986411@qq.com', 'www.baidu.com', '2');
 
 -- ----------------------------
 -- Table structure for commentstatus
@@ -167,10 +170,11 @@ CREATE TABLE `user` (
   `created_at` int(11) NOT NULL,
   `updated_at` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of user
 -- ----------------------------
 INSERT INTO `user` VALUES ('1', '哦，我想多了', '', '', '', '', '0', '0', '0');
 INSERT INTO `user` VALUES ('2', '噢，我想多了', '', '', '', '', '0', '0', '0');
+INSERT INTO `user` VALUES ('3', 'admin', 'Bt8zaNc2XmBxXtcf_DGiWmxw9wAaOvwx', '$2y$13$uCrldaZuTQ43cSTAXwO5E.jAfwoJ4bokJ9Fd7RJ24zCfAbDkQgpMK', '', '501986411@qq.com', '10', '1490424220', '1490424220');

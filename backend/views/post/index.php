@@ -25,15 +25,20 @@ $this->params['breadcrumbs'][] = $this->title;
                 'class' => 'yii\grid\SerialColumn'
             ],
             'title',
-            'tags:ntext',
+            [
+                'attribute'=>'tags',
+                'contentOptions'=>['width'=>'30px']
+            ],
             [
                 'attribute'=>'author_id',
                 'value' => 'author.username',
+                'contentOptions'=>['width'=>'30px','text-align'=>'center']
             ],
             [
               'attribute'=>'status',
               'filter' => $searchModel->getAllStatus(),
-              'value'  =>'pStatus.name'
+              'value'  =>'pStatus.name',
+               'contentOptions'=>['width'=>'110px']
             ],
             [
                 'attribute'=>'update_time',

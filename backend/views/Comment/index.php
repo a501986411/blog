@@ -20,23 +20,36 @@ $this->params['breadcrumbs'][] = $this->title;
             [
                 'class' => 'yii\grid\SerialColumn',
                 'header'=>'序号',
+                'contentOptions'=>['width'=>'50px'],
             ],
-            'content:ntext',
+            [
+                'attribute'=>'content',
+                 'value'=>'beginning',
+                 'contentOptions'=>['width'=>'80px'],
+            ],
             [
                 'attribute'=>'status',
-                'value'=>'cStatus.name'
-            ],
-             [
-                 'attribute'=>'create_time',
-                 'format'=>['date','php:Y-m-d H:i:s']
-             ],
-            [
-                'attribute'=>'userid',
-                'value'=>'user.username'
+                'value'=>'cStatus.name',
+                'contentOptions'=> function($model){
+                    $style['width'] = '110px';
+                    $style['class'] = ($model->status == 1) ? 'bg-danger':[];
+                    return $style;
+                },
+                'filter'=>\common\models\CommentStatus::find()->select(['name','id'])->indexBy('id')->column()
             ],
             [
-                'attribute'=>'post_id',
-                'value'=>'post.title'
+                'label'=>'作者',
+                'attribute'=>'user.username',
+                'contentOptions'=>['width'=>'130px'],
+            ],
+            [
+                'attribute'=>'post.title',
+                'contentOptions'=>['width'=>'130px'],
+            ],
+            [
+                'attribute'=>'create_time',
+                'format'=>['date','php:Y-m-d H:i:s'],
+                'contentOptions'=>['width'=>'100px'],
             ],
             [
                 'header'=>'操作',
@@ -44,9 +57,27 @@ $this->params['breadcrumbs'][] = $this->title;
                 'template'=>'{view} {delete} {approve}',
                 'buttons'=>[
                         'approve'=>function($url,$model,$key){
-                        return $model->status == 1 ? Html::a('<span class="glyphicon glyphicon-check"></span>',$url,['title'=>'审核']):'';
+                        $options = [
+                            'title' =>Yii::t('yii','审核'),
+                            'aria-label'=>Yii::t('yii','审核'),
+                            'data-confirm'=>Yii::t('yii','你确定通过这条评论吗?'),
+                            'data-method'=>'post',
+                            'data-pjax'=>'0'
+                        ];
+                        return $model->status == 1 ? Html::a('<span class="glyphicon glyphicon-check"></span>',$url,$options):'';
                     },
-                ]
+                    'delete'=>function($url,$model,$key){
+                        $options = [
+                            'title' =>Yii::t('yii','审核'),
+                            'aria-label'=>yii::t('yii','删除'),
+                            'data-confirm'=>yii::t('yii','你确定删除这条评论吗?'),
+                            'data-method'=>'post',
+                            'data-pjax'=>'0'
+                        ];
+                        return $model->status != 3 ? Html::a('<span class="glyphicon glyphicon-trash"></span>',$url,$options) : '';
+                    }
+                ],
+                  'contentOptions'=>['width'=>'40px'],
             ],
         ],
         'emptyText'=>'当前没有没有评论',

@@ -27,5 +27,4 @@ function debug($data){
         echo '[type] ' . gettype($data) . PHP_EOL;
         echo '[data] ';
         print_r($data);
-        exit;
 }
