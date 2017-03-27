@@ -76,13 +76,12 @@ class SiteController extends Controller
     }
 
     /**
-     * Logs in a user.
-     *
+     * 用户登录
      * @return mixed
      */
     public function actionLogin()
     {
-        if (!Yii::$app->user->isGuest) {
+        if (!Yii::$app->user->isGuest) { //是否是游客
             return $this->goHome();
         }
 
@@ -142,8 +141,7 @@ class SiteController extends Controller
     }
 
     /**
-     * Signs user up.
-     *
+     * 注册用户
      * @return mixed
      */
     public function actionSignup()
