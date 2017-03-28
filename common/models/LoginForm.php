@@ -32,9 +32,7 @@ class LoginForm extends Model
     }
 
     /**
-     * Validates the password.
-     * This method serves as the inline validation for password.
-     *
+     * 验证用户输入的密码
      * @param string $attribute the attribute currently being validated
      * @param array $params the additional name-value pairs given in the rule
      */
@@ -43,7 +41,7 @@ class LoginForm extends Model
         if (!$this->hasErrors()) {
             $user = $this->getUser();
             if (!$user || !$user->validatePassword($this->password)) {
-                $this->addError($attribute, 'Incorrect username or password.');
+                $this->addError($attribute, '用户名或者密码错误');
             }
         }
     }
@@ -69,7 +67,8 @@ class LoginForm extends Model
         return [
             'username' => '用户名',
             'password' => '密码',
-            'rememberMe'=>'记住密码'
+            'rememberMe'=>'记住密码',
+            'email'=>'邮箱',
         ];
     }
     /**
