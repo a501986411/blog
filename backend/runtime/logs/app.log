@@ -1,0 +1,824 @@
+2017-03-29 11:28:59 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Missing argument 1 for yii\db\BaseActiveRecord::getAttributeLabel(), called in E:\project\advanced\common\models\Adminuser.php on line 98 and defined' in E:\project\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php:1542
+Stack trace:
+#0 E:\project\advanced\backend\controllers\AdminuserController.php(74): common\models\Adminuser->register()
+#1 E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\AdminuserController->actionCreate()
+#2 E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#3 E:\project\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#4 E:\project\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#5 E:\project\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#6 E:\project\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#7 E:\project\advanced\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2017-03-29 11:28:58 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'adminuser/create'
+]
+
+$_POST = [
+    '_csrf-backend' => 'RGRHMExJWWg8LRdnGAMeGi0sCEB7fAAqcAcWfy8cbAMwDilFDwgtDg=='
+    'Adminuser' => [
+        'username' => 'admin1'
+        'nickname' => 'admin1'
+        'password' => '0123456789'
+        'email' => '54454@qq.com'
+        'profile' => '475454'
+    ]
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'jbre0hd6jkl7395a08rgi549h4'
+    '_csrf-backend' => 'fc1fbab6cd36993c02878e0cbc318b5833bd7bd58058459ba4620e3ea05339bca:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"xIPWTJGriHOp75YB4cQOcU5ktjnuCAtf\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii.admin.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '237'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://yii.admin.com'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://yii.admin.com/index.php?r=adminuser%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'advanced-backend=jbre0hd6jkl7395a08rgi549h4; _csrf-backend=fc1fbab6cd36993c02878e0cbc318b5833bd7bd58058459ba4620e3ea05339bca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22xIPWTJGriHOp75YB4cQOcU5ktjnuCAtf%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\Lenovo;C:\\ProgramData\\Lenovo\\ReadyApps;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;D:\\TortoiseSVN\\bin;D:\\Git\\cmd;D:\\OpenVPN\\bin;C:\\Program Files\\OpenVPN\\bin;d:\\Program Files\\OpenVPN\\bin;D:\\fastKey;D:\\wamp\\bin\\php\\php-7.0.14ts;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at yii.admin.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'yii.admin.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/project/advanced/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/project/advanced/backend/web'
+    'SERVER_ADMIN' => 'knight@qq.com'
+    'SCRIPT_FILENAME' => 'E:/project/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '49613'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=adminuser%2Fcreate'
+    'REQUEST_URI' => '/index.php?r=adminuser%2Fcreate'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1490779738.259
+    'REQUEST_TIME' => 1490779738
+]
+2017-03-29 11:30:24 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Illegal offset type in isset or empty' in E:\project\advanced\vendor\yiisoft\yii2\base\Model.php:566
+Stack trace:
+#0 E:\project\advanced\backend\controllers\AdminuserController.php(74): common\models\Adminuser->register()
+#1 E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\AdminuserController->actionCreate()
+#2 E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#3 E:\project\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#4 E:\project\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#5 E:\project\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#6 E:\project\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#7 E:\project\advanced\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2017-03-29 11:30:23 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'adminuser/create'
+]
+
+$_POST = [
+    '_csrf-backend' => 'RGRHMExJWWg8LRdnGAMeGi0sCEB7fAAqcAcWfy8cbAMwDilFDwgtDg=='
+    'Adminuser' => [
+        'username' => 'admin1'
+        'nickname' => 'admin1'
+        'password' => '0123456789'
+        'email' => '54454@qq.com'
+        'profile' => '475454'
+    ]
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'jbre0hd6jkl7395a08rgi549h4'
+    '_csrf-backend' => 'fc1fbab6cd36993c02878e0cbc318b5833bd7bd58058459ba4620e3ea05339bca:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"xIPWTJGriHOp75YB4cQOcU5ktjnuCAtf\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii.admin.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '237'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://yii.admin.com'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://yii.admin.com/index.php?r=adminuser%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'advanced-backend=jbre0hd6jkl7395a08rgi549h4; _csrf-backend=fc1fbab6cd36993c02878e0cbc318b5833bd7bd58058459ba4620e3ea05339bca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22xIPWTJGriHOp75YB4cQOcU5ktjnuCAtf%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\Lenovo;C:\\ProgramData\\Lenovo\\ReadyApps;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;D:\\TortoiseSVN\\bin;D:\\Git\\cmd;D:\\OpenVPN\\bin;C:\\Program Files\\OpenVPN\\bin;d:\\Program Files\\OpenVPN\\bin;D:\\fastKey;D:\\wamp\\bin\\php\\php-7.0.14ts;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at yii.admin.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'yii.admin.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/project/advanced/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/project/advanced/backend/web'
+    'SERVER_ADMIN' => 'knight@qq.com'
+    'SCRIPT_FILENAME' => 'E:/project/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '49685'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=adminuser%2Fcreate'
+    'REQUEST_URI' => '/index.php?r=adminuser%2Fcreate'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1490779823.344
+    'REQUEST_TIME' => 1490779823
+]
+2017-03-29 11:31:50 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Illegal offset type in isset or empty' in E:\project\advanced\vendor\yiisoft\yii2\base\Model.php:566
+Stack trace:
+#0 E:\project\advanced\backend\controllers\AdminuserController.php(74): common\models\Adminuser->register()
+#1 E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\AdminuserController->actionCreate()
+#2 E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#3 E:\project\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#4 E:\project\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#5 E:\project\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#6 E:\project\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#7 E:\project\advanced\backend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2017-03-29 11:31:49 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'adminuser/create'
+]
+
+$_POST = [
+    '_csrf-backend' => 'RGRHMExJWWg8LRdnGAMeGi0sCEB7fAAqcAcWfy8cbAMwDilFDwgtDg=='
+    'Adminuser' => [
+        'username' => 'admin1'
+        'nickname' => 'admin1'
+        'password' => '0123456789'
+        'email' => '54454@qq.com'
+        'profile' => '475454'
+    ]
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'jbre0hd6jkl7395a08rgi549h4'
+    '_csrf-backend' => 'fc1fbab6cd36993c02878e0cbc318b5833bd7bd58058459ba4620e3ea05339bca:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"xIPWTJGriHOp75YB4cQOcU5ktjnuCAtf\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii.admin.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '237'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://yii.admin.com'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://yii.admin.com/index.php?r=adminuser%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'advanced-backend=jbre0hd6jkl7395a08rgi549h4; _csrf-backend=fc1fbab6cd36993c02878e0cbc318b5833bd7bd58058459ba4620e3ea05339bca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22xIPWTJGriHOp75YB4cQOcU5ktjnuCAtf%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\Lenovo;C:\\ProgramData\\Lenovo\\ReadyApps;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;D:\\TortoiseSVN\\bin;D:\\Git\\cmd;D:\\OpenVPN\\bin;C:\\Program Files\\OpenVPN\\bin;d:\\Program Files\\OpenVPN\\bin;D:\\fastKey;D:\\wamp\\bin\\php\\php-7.0.14ts;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at yii.admin.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'yii.admin.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/project/advanced/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/project/advanced/backend/web'
+    'SERVER_ADMIN' => 'knight@qq.com'
+    'SCRIPT_FILENAME' => 'E:/project/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '49727'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=adminuser%2Fcreate'
+    'REQUEST_URI' => '/index.php?r=adminuser%2Fcreate'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1490779909.925
+    'REQUEST_TIME' => 1490779909
+]
+2017-03-29 11:45:13 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Invalid argument supplied for foreach()' in E:\project\advanced\vendor\yiisoft\yii2\base\Model.php:443
+Stack trace:
+#0 E:\project\advanced\vendor\yiisoft\yii2\base\Model.php(426): yii\base\Model->getValidators()
+#1 E:\project\advanced\vendor\yiisoft\yii2\base\Model.php(472): yii\base\Model->getActiveValidators()
+#2 E:\project\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(859): yii\base\Model->isAttributeRequired()
+#3 E:\project\advanced\vendor\yiisoft\yii2\widgets\ActiveField.php(393): yii\widgets\ActiveField->addAriaAttributes()
+#4 E:\project\advanced\backend\views\adminuser\_form.php(16): yii\widgets\ActiveField->textInput()
+#5 E:\project\advanced\vendor\yiisoft\yii2\base\View.php(328): ::unknown()
+#6 E:\project\advanced\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#7 E:\project\advanced\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile()
+#8 E:\project\advanced\backend\views\adminuser\create.php(19): yii\base\View->render()
+#9 E:\project\advanced\vendor\yiisoft\yii2\base\View.php(328): ::unknown()
+#10 E:\project\advanced\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#11 E:\project\advanced\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile()
+#12 E:\project\advanced\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render()
+#13 E:\project\advanced\backend\controllers\AdminuserController.php(80): yii\base\Controller->render()
+#14 E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\AdminuserController->actionCreate()
+#15 E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#16 E:\project\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#17 E:\project\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#18 E:\project\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#19 E:\project\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#20 E:\project\advanced\backend\web\index.php(18): yii\base\Application->run()
+#21 {main}
+2017-03-29 11:45:13 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'adminuser/create'
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'jbre0hd6jkl7395a08rgi549h4'
+    '_csrf-backend' => 'fc1fbab6cd36993c02878e0cbc318b5833bd7bd58058459ba4620e3ea05339bca:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"xIPWTJGriHOp75YB4cQOcU5ktjnuCAtf\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii.admin.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://yii.admin.com/index.php?r=adminuser%2Findex'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'advanced-backend=jbre0hd6jkl7395a08rgi549h4; _csrf-backend=fc1fbab6cd36993c02878e0cbc318b5833bd7bd58058459ba4620e3ea05339bca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22xIPWTJGriHOp75YB4cQOcU5ktjnuCAtf%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\Lenovo;C:\\ProgramData\\Lenovo\\ReadyApps;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;D:\\TortoiseSVN\\bin;D:\\Git\\cmd;D:\\OpenVPN\\bin;C:\\Program Files\\OpenVPN\\bin;d:\\Program Files\\OpenVPN\\bin;D:\\fastKey;D:\\wamp\\bin\\php\\php-7.0.14ts;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at yii.admin.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'yii.admin.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/project/advanced/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/project/advanced/backend/web'
+    'SERVER_ADMIN' => 'knight@qq.com'
+    'SCRIPT_FILENAME' => 'E:/project/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '50159'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adminuser%2Fcreate'
+    'REQUEST_URI' => '/index.php?r=adminuser%2Fcreate'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1490780713.804
+    'REQUEST_TIME' => 1490780713
+]
+2017-03-29 12:05:03 [127.0.0.1][-][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Setting unknown property: common\models\Adminuser::createTime' in E:\project\advanced\vendor\yiisoft\yii2\base\Component.php:201
+Stack trace:
+#0 E:\project\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(306): yii\base\Component->__set('createTime', 1490781903)
+#1 E:\project\advanced\common\models\Adminuser.php(59): yii\db\BaseActiveRecord->__set('createTime', 1490781903)
+#2 E:\project\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(490): common\models\Adminuser->beforeSave(true)
+#3 E:\project\advanced\vendor\yiisoft\yii2\db\ActiveRecord.php(461): yii\db\ActiveRecord->insertInternal(NULL)
+#4 E:\project\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(635): yii\db\ActiveRecord->insert(true, NULL)
+#5 E:\project\advanced\common\models\Adminuser.php(74): yii\db\BaseActiveRecord->save()
+#6 E:\project\advanced\backend\controllers\AdminuserController.php(69): common\models\Adminuser->register()
+#7 [internal function]: backend\controllers\AdminuserController->actionCreate()
+#8 E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#9 E:\project\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#10 E:\project\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('create', Array)
+#11 E:\project\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('adminuser/creat...', Array)
+#12 E:\project\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 E:\project\advanced\backend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2017-03-29 12:05:03 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'adminuser/create'
+]
+
+$_POST = [
+    '_csrf-backend' => 'ODF3elZOZWpAeCctAgQiGFF5OAphezwoDFImNTUbUAFMWxkPFQ8RDA=='
+    'Adminuser' => [
+        'username' => 'sdfasdf'
+        'nickname' => 'fgdfg'
+        'password' => 'dfgsdfg'
+        'email' => 'dfgsf'
+        'profile' => 'gdfgsdg'
+    ]
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'jbre0hd6jkl7395a08rgi549h4'
+    '_csrf-backend' => 'fc1fbab6cd36993c02878e0cbc318b5833bd7bd58058459ba4620e3ea05339bca:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"xIPWTJGriHOp75YB4cQOcU5ktjnuCAtf\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii.admin.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '226'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://yii.admin.com'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://yii.admin.com/index.php?r=adminuser%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'advanced-backend=jbre0hd6jkl7395a08rgi549h4; _csrf-backend=fc1fbab6cd36993c02878e0cbc318b5833bd7bd58058459ba4620e3ea05339bca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22xIPWTJGriHOp75YB4cQOcU5ktjnuCAtf%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\Lenovo;C:\\ProgramData\\Lenovo\\ReadyApps;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;D:\\TortoiseSVN\\bin;D:\\Git\\cmd;D:\\OpenVPN\\bin;C:\\Program Files\\OpenVPN\\bin;d:\\Program Files\\OpenVPN\\bin;D:\\fastKey;D:\\wamp\\bin\\php\\php-7.0.14ts;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at yii.admin.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'yii.admin.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/project/advanced/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/project/advanced/backend/web'
+    'SERVER_ADMIN' => 'knight@qq.com'
+    'SCRIPT_FILENAME' => 'E:/project/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '50715'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=adminuser%2Fcreate'
+    'REQUEST_URI' => '/index.php?r=adminuser%2Fcreate'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1490781903.714
+    'REQUEST_TIME' => 1490781903
+]
+2017-03-29 12:22:33 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Missing argument 1 for yii\base\Security::generatePasswordHash(), called in E:\project\advanced\common\models\Adminuser.php on line 80 and defined' in E:\project\advanced\vendor\yiisoft\yii2\base\Security.php:600
+Stack trace:
+#0 E:\project\advanced\common\models\Adminuser.php(94): common\models\Adminuser->setPassword()
+#1 E:\project\advanced\backend\controllers\AdminuserController.php(76): common\models\Adminuser->register()
+#2 E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\AdminuserController->actionCreate()
+#3 E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#4 E:\project\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#5 E:\project\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#6 E:\project\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#7 E:\project\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#8 E:\project\advanced\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+2017-03-29 12:22:33 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'adminuser/create'
+]
+
+$_POST = [
+    '_csrf-backend' => 'd3B1Xzc4dEcPOSUIY3IzNR44Oi8ADS0FQxMkEFRtQSwDGhsqdHkAIQ=='
+    'Adminuser' => [
+        'username' => 'admin1'
+        'nickname' => '噢,我想多了'
+        'password' => '123456789'
+        'email' => '50198456411@qq.com'
+        'profile' => '123'
+    ]
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'jbre0hd6jkl7395a08rgi549h4'
+    '_csrf-backend' => 'fc1fbab6cd36993c02878e0cbc318b5833bd7bd58058459ba4620e3ea05339bca:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"xIPWTJGriHOp75YB4cQOcU5ktjnuCAtf\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii.admin.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '281'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://yii.admin.com'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://yii.admin.com/index.php?r=adminuser%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'advanced-backend=jbre0hd6jkl7395a08rgi549h4; _csrf-backend=fc1fbab6cd36993c02878e0cbc318b5833bd7bd58058459ba4620e3ea05339bca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22xIPWTJGriHOp75YB4cQOcU5ktjnuCAtf%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\Lenovo;C:\\ProgramData\\Lenovo\\ReadyApps;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;D:\\TortoiseSVN\\bin;D:\\Git\\cmd;D:\\OpenVPN\\bin;C:\\Program Files\\OpenVPN\\bin;d:\\Program Files\\OpenVPN\\bin;D:\\fastKey;D:\\wamp\\bin\\php\\php-7.0.14ts;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at yii.admin.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'yii.admin.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/project/advanced/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/project/advanced/backend/web'
+    'SERVER_ADMIN' => 'knight@qq.com'
+    'SCRIPT_FILENAME' => 'E:/project/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '51252'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=adminuser%2Fcreate'
+    'REQUEST_URI' => '/index.php?r=adminuser%2Fcreate'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1490782953.776
+    'REQUEST_TIME' => 1490782953
+]
+2017-03-29 12:23:18 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Interface 'common\models\IdentityInterface' not found' in E:\project\advanced\common\models\Adminuser.php:19
+Stack trace:
+#0 E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php(0): yii\BaseYii::autoload()
+#1 E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php(68): ::spl_autoload_call()
+#2 E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\AdminuserController->actionCreate()
+#3 E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#4 E:\project\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#5 E:\project\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#6 E:\project\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#7 E:\project\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#8 E:\project\advanced\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+2017-03-29 12:23:18 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'adminuser/create'
+]
+
+$_POST = [
+    '_csrf-backend' => 'd3B1Xzc4dEcPOSUIY3IzNR44Oi8ADS0FQxMkEFRtQSwDGhsqdHkAIQ=='
+    'Adminuser' => [
+        'username' => 'admin1'
+        'nickname' => '噢,我想多了'
+        'password' => '123456789'
+        'email' => '50198456411@qq.com'
+        'profile' => '123'
+    ]
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'jbre0hd6jkl7395a08rgi549h4'
+    '_csrf-backend' => 'fc1fbab6cd36993c02878e0cbc318b5833bd7bd58058459ba4620e3ea05339bca:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"xIPWTJGriHOp75YB4cQOcU5ktjnuCAtf\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii.admin.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '281'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://yii.admin.com'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://yii.admin.com/index.php?r=adminuser%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'advanced-backend=jbre0hd6jkl7395a08rgi549h4; _csrf-backend=fc1fbab6cd36993c02878e0cbc318b5833bd7bd58058459ba4620e3ea05339bca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22xIPWTJGriHOp75YB4cQOcU5ktjnuCAtf%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\Lenovo;C:\\ProgramData\\Lenovo\\ReadyApps;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;D:\\TortoiseSVN\\bin;D:\\Git\\cmd;D:\\OpenVPN\\bin;C:\\Program Files\\OpenVPN\\bin;d:\\Program Files\\OpenVPN\\bin;D:\\fastKey;D:\\wamp\\bin\\php\\php-7.0.14ts;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at yii.admin.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'yii.admin.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/project/advanced/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/project/advanced/backend/web'
+    'SERVER_ADMIN' => 'knight@qq.com'
+    'SCRIPT_FILENAME' => 'E:/project/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '51273'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=adminuser%2Fcreate'
+    'REQUEST_URI' => '/index.php?r=adminuser%2Fcreate'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1490782998.026
+    'REQUEST_TIME' => 1490782998
+]
+2017-03-29 12:24:36 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class common\models\Adminuser contains 5 abstract methods and must therefore be declared abstract or implement the remaining methods (yii\web\IdentityInterface::findIdentity, yii\web\IdentityInterface::findIdentityByAccessToken, yii\web\IdentityInterface::getId, ...)' in E:\project\advanced\common\models\Adminuser.php:104
+Stack trace:
+#0 E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php(0): yii\BaseYii::autoload()
+#1 E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php(68): ::spl_autoload_call()
+#2 E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\AdminuserController->actionCreate()
+#3 E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#4 E:\project\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#5 E:\project\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#6 E:\project\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#7 E:\project\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#8 E:\project\advanced\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+2017-03-29 12:24:36 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'adminuser/create'
+]
+
+$_POST = [
+    '_csrf-backend' => 'd3B1Xzc4dEcPOSUIY3IzNR44Oi8ADS0FQxMkEFRtQSwDGhsqdHkAIQ=='
+    'Adminuser' => [
+        'username' => 'admin1'
+        'nickname' => '噢,我想多了'
+        'password' => '123456789'
+        'email' => '50198456411@qq.com'
+        'profile' => '123'
+    ]
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'jbre0hd6jkl7395a08rgi549h4'
+    '_csrf-backend' => 'fc1fbab6cd36993c02878e0cbc318b5833bd7bd58058459ba4620e3ea05339bca:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"xIPWTJGriHOp75YB4cQOcU5ktjnuCAtf\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii.admin.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '281'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://yii.admin.com'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://yii.admin.com/index.php?r=adminuser%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'advanced-backend=jbre0hd6jkl7395a08rgi549h4; _csrf-backend=fc1fbab6cd36993c02878e0cbc318b5833bd7bd58058459ba4620e3ea05339bca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22xIPWTJGriHOp75YB4cQOcU5ktjnuCAtf%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\Lenovo;C:\\ProgramData\\Lenovo\\ReadyApps;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;D:\\TortoiseSVN\\bin;D:\\Git\\cmd;D:\\OpenVPN\\bin;C:\\Program Files\\OpenVPN\\bin;d:\\Program Files\\OpenVPN\\bin;D:\\fastKey;D:\\wamp\\bin\\php\\php-7.0.14ts;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at yii.admin.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'yii.admin.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/project/advanced/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/project/advanced/backend/web'
+    'SERVER_ADMIN' => 'knight@qq.com'
+    'SCRIPT_FILENAME' => 'E:/project/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '51313'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=adminuser%2Fcreate'
+    'REQUEST_URI' => '/index.php?r=adminuser%2Fcreate'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1490783076.053
+    'REQUEST_TIME' => 1490783076
+]
+2017-03-29 12:25:11 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class common\models\Adminuser contains 3 abstract methods and must therefore be declared abstract or implement the remaining methods (yii\web\IdentityInterface::getId, yii\web\IdentityInterface::getAuthKey, yii\web\IdentityInterface::validateAuthKey)' in E:\project\advanced\common\models\Adminuser.php:122
+Stack trace:
+#0 E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php(0): yii\BaseYii::autoload()
+#1 E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php(68): ::spl_autoload_call()
+#2 E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\AdminuserController->actionCreate()
+#3 E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#4 E:\project\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#5 E:\project\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#6 E:\project\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#7 E:\project\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#8 E:\project\advanced\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+2017-03-29 12:25:11 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'adminuser/create'
+]
+
+$_POST = [
+    '_csrf-backend' => 'd3B1Xzc4dEcPOSUIY3IzNR44Oi8ADS0FQxMkEFRtQSwDGhsqdHkAIQ=='
+    'Adminuser' => [
+        'username' => 'admin1'
+        'nickname' => '噢,我想多了'
+        'password' => '123456789'
+        'email' => '50198456411@qq.com'
+        'profile' => '123'
+    ]
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'jbre0hd6jkl7395a08rgi549h4'
+    '_csrf-backend' => 'fc1fbab6cd36993c02878e0cbc318b5833bd7bd58058459ba4620e3ea05339bca:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"xIPWTJGriHOp75YB4cQOcU5ktjnuCAtf\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii.admin.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '281'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://yii.admin.com'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://yii.admin.com/index.php?r=adminuser%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'advanced-backend=jbre0hd6jkl7395a08rgi549h4; _csrf-backend=fc1fbab6cd36993c02878e0cbc318b5833bd7bd58058459ba4620e3ea05339bca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22xIPWTJGriHOp75YB4cQOcU5ktjnuCAtf%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\Lenovo;C:\\ProgramData\\Lenovo\\ReadyApps;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;D:\\TortoiseSVN\\bin;D:\\Git\\cmd;D:\\OpenVPN\\bin;C:\\Program Files\\OpenVPN\\bin;d:\\Program Files\\OpenVPN\\bin;D:\\fastKey;D:\\wamp\\bin\\php\\php-7.0.14ts;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at yii.admin.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'yii.admin.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/project/advanced/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/project/advanced/backend/web'
+    'SERVER_ADMIN' => 'knight@qq.com'
+    'SCRIPT_FILENAME' => 'E:/project/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '51335'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=adminuser%2Fcreate'
+    'REQUEST_URI' => '/index.php?r=adminuser%2Fcreate'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1490783111.372
+    'REQUEST_TIME' => 1490783111
+]
+2017-03-29 12:25:37 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Missing argument 1 for yii\base\Security::generatePasswordHash(), called in E:\project\advanced\common\models\Adminuser.php on line 137 and defined' in E:\project\advanced\vendor\yiisoft\yii2\base\Security.php:600
+Stack trace:
+#0 E:\project\advanced\common\models\Adminuser.php(151): common\models\Adminuser->setPassword()
+#1 E:\project\advanced\backend\controllers\AdminuserController.php(76): common\models\Adminuser->register()
+#2 E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\AdminuserController->actionCreate()
+#3 E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#4 E:\project\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#5 E:\project\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#6 E:\project\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#7 E:\project\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#8 E:\project\advanced\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+2017-03-29 12:25:37 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'adminuser/create'
+]
+
+$_POST = [
+    '_csrf-backend' => 'd3B1Xzc4dEcPOSUIY3IzNR44Oi8ADS0FQxMkEFRtQSwDGhsqdHkAIQ=='
+    'Adminuser' => [
+        'username' => 'admin1'
+        'nickname' => '噢,我想多了'
+        'password' => '123456789'
+        'email' => '50198456411@qq.com'
+        'profile' => '123'
+    ]
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'jbre0hd6jkl7395a08rgi549h4'
+    '_csrf-backend' => 'fc1fbab6cd36993c02878e0cbc318b5833bd7bd58058459ba4620e3ea05339bca:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"xIPWTJGriHOp75YB4cQOcU5ktjnuCAtf\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii.admin.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '281'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://yii.admin.com'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://yii.admin.com/index.php?r=adminuser%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'advanced-backend=jbre0hd6jkl7395a08rgi549h4; _csrf-backend=fc1fbab6cd36993c02878e0cbc318b5833bd7bd58058459ba4620e3ea05339bca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22xIPWTJGriHOp75YB4cQOcU5ktjnuCAtf%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\Lenovo;C:\\ProgramData\\Lenovo\\ReadyApps;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;D:\\TortoiseSVN\\bin;D:\\Git\\cmd;D:\\OpenVPN\\bin;C:\\Program Files\\OpenVPN\\bin;d:\\Program Files\\OpenVPN\\bin;D:\\fastKey;D:\\wamp\\bin\\php\\php-7.0.14ts;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at yii.admin.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'yii.admin.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/project/advanced/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/project/advanced/backend/web'
+    'SERVER_ADMIN' => 'knight@qq.com'
+    'SCRIPT_FILENAME' => 'E:/project/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '51345'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=adminuser%2Fcreate'
+    'REQUEST_URI' => '/index.php?r=adminuser%2Fcreate'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1490783137.408
+    'REQUEST_TIME' => 1490783137
+]
+2017-03-29 12:28:52 [127.0.0.1][-][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'Missing argument 1 for yii\base\Security::generatePasswordHash(), called in E:\project\advanced\common\models\Adminuser.php on line 137 and defined' in E:\project\advanced\vendor\yiisoft\yii2\base\Security.php:600
+Stack trace:
+#0 E:\project\advanced\common\models\Adminuser.php(151): common\models\Adminuser->setPassword()
+#1 E:\project\advanced\backend\controllers\AdminuserController.php(76): common\models\Adminuser->register()
+#2 E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): backend\controllers\AdminuserController->actionCreate()
+#3 E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#4 E:\project\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#5 E:\project\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#6 E:\project\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#7 E:\project\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#8 E:\project\advanced\backend\web\index.php(18): yii\base\Application->run()
+#9 {main}
+2017-03-29 12:28:52 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'adminuser/create'
+]
+
+$_POST = [
+    '_csrf-backend' => 'd3B1Xzc4dEcPOSUIY3IzNR44Oi8ADS0FQxMkEFRtQSwDGhsqdHkAIQ=='
+    'Adminuser' => [
+        'username' => 'admin1'
+        'nickname' => '噢,我想多了'
+        'password' => '123456789'
+        'email' => '50198456411@qq.com'
+        'profile' => '123'
+    ]
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'jbre0hd6jkl7395a08rgi549h4'
+    '_csrf-backend' => 'fc1fbab6cd36993c02878e0cbc318b5833bd7bd58058459ba4620e3ea05339bca:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"xIPWTJGriHOp75YB4cQOcU5ktjnuCAtf\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'yii.admin.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '281'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://yii.admin.com'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://yii.admin.com/index.php?r=adminuser%2Fcreate'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'advanced-backend=jbre0hd6jkl7395a08rgi549h4; _csrf-backend=fc1fbab6cd36993c02878e0cbc318b5833bd7bd58058459ba4620e3ea05339bca%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22xIPWTJGriHOp75YB4cQOcU5ktjnuCAtf%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\Lenovo;C:\\ProgramData\\Lenovo\\ReadyApps;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;D:\\TortoiseSVN\\bin;D:\\Git\\cmd;D:\\OpenVPN\\bin;C:\\Program Files\\OpenVPN\\bin;d:\\Program Files\\OpenVPN\\bin;D:\\fastKey;D:\\wamp\\bin\\php\\php-7.0.14ts;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at yii.admin.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'yii.admin.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/project/advanced/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/project/advanced/backend/web'
+    'SERVER_ADMIN' => 'knight@qq.com'
+    'SCRIPT_FILENAME' => 'E:/project/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '51435'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=adminuser%2Fcreate'
+    'REQUEST_URI' => '/index.php?r=adminuser%2Fcreate'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1490783332.61
+    'REQUEST_TIME' => 1490783332
+]

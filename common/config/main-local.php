@@ -26,5 +26,5 @@ function debug($data){
         echo '<pre>' . PHP_EOL;
         echo '[type] ' . gettype($data) . PHP_EOL;
         echo '[data] ';
-        print_r($data);
+        var_dump($data);
 }

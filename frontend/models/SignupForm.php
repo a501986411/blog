@@ -12,6 +12,7 @@ class SignupForm extends Model
     public $username;
     public $email;
     public $password;
+    public $repassword;//确认密码
 
 
     /**
@@ -31,8 +32,9 @@ class SignupForm extends Model
             ['email', 'string', 'max' => 255],
             ['email', 'unique', 'targetClass' => '\common\models\User', 'message' => '邮箱已存在'],
 
-            ['password', 'required'],
-            ['password', 'string', 'min' => 6],
+            [['password','repassword'], 'required'],
+            [['password','repassword'], 'string', 'min' => 6],
+            ['repassword', 'compare', 'compareAttribute' => 'password','message'=>'两次密码不一致'],
         ];
     }
 
@@ -41,7 +43,8 @@ class SignupForm extends Model
         return [
             'username' =>'用户名',
             'email' =>'邮箱',
-            'password' =>'密码'
+            'password' =>'密码',
+            'repassword' =>'确认密码'
         ];
     }
 
@@ -61,7 +64,6 @@ class SignupForm extends Model
         $user->email = $this->email;
         $user->setPassword($this->password); //加密密码
         $user->generateAuthKey();
-        
         return $user->save() ? $user : null;
     }
 }

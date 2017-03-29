@@ -12,6 +12,8 @@ use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
+use yii\web\Response;
+use yii\bootstrap\ActiveForm;
 
 /**
  * Site controller
@@ -148,13 +150,18 @@ class SiteController extends Controller
     {
         $model = new SignupForm();
         if ($model->load(Yii::$app->request->post())) {
+            if(Yii::$app->request->isAjax){
+                Yii::$app->response->format = Response::FORMAT_JSON;
+                $result =  ActiveForm::validate($model);
+                return $result;
+            }
+
             if ($user = $model->signup()) {
                 if (Yii::$app->getUser()->login($user)) {
                     return $this->goHome();
                 }
             }
         }
-
         return $this->render('signup', [
             'model' => $model,
         ]);
