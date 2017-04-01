@@ -72,7 +72,6 @@ class AdminuserController extends Controller
                 Yii::$app->response->format = Response::FORMAT_JSON;
                 return  ActiveForm::validate($model);
             }
-
             if($model->register()){
                 return $this->redirect(['view', 'id' => $model->id]);
             }

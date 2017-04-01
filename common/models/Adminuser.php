@@ -4,7 +4,6 @@ namespace common\models;
 
 use Yii;
 use yii\base\NotSupportedException;
-use yii\behaviors\TimestampBehavior;
 use yii\db\ActiveRecord;
 use yii\web\IdentityInterface;
 /**
@@ -60,6 +59,13 @@ class Adminuser extends ActiveRecord implements IdentityInterface
         ];
     }
 
+    /**
+     * 保存或者修改前操作
+     * @access public
+     * @param bool $insert
+     * @return bool
+     * @author knight
+     */
     public  function beforeSave($insert)
     {
         if(parent::beforeSave($insert)){
@@ -71,6 +77,17 @@ class Adminuser extends ActiveRecord implements IdentityInterface
             return false;
         }
     }
+
+    /**
+     * 根据用户名获取用户
+     * @param string $username
+     * @return static|null
+     */
+    public static function findByUsername($username)
+    {
+        return static::findOne(['username' => $username]);
+    }
+
 
     /**
      * 根据指定的用户ID查找 认证模型类的实例，当你需要使用session来维持登录状态的时候会用到这个方法。
@@ -122,7 +139,7 @@ class Adminuser extends ActiveRecord implements IdentityInterface
      */
     public function validatePassword($password)
     {
-        return Yii::$app->security->validatePassword($password, $this->password_hash);
+        return Yii::$app->security->validatePassword($password, $this->password);
     }
 
 

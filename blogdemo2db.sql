@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50617
 File Encoding         : 65001
 
-Date: 2017-03-29 18:31:47
+Date: 2017-04-01 18:15:08
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -27,16 +27,19 @@ CREATE TABLE `adminuser` (
   `email` varchar(128) NOT NULL,
   `profile` text NOT NULL,
   `create_time` int(11) NOT NULL,
+  `auth_key` varchar(32) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 COMMENT='管理员用户表';
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 COMMENT='管理员用户表';
 
 -- ----------------------------
 -- Records of adminuser
 -- ----------------------------
-INSERT INTO `adminuser` VALUES ('6', 'dfgdfg', 'dfgsdfg', '501986411@qq.com', '501986411@qq.com', 'sdfgsdfg', '0');
-INSERT INTO `adminuser` VALUES ('7', 'admin', 'fgdfg', '501986411@qq.com', 'dfgsf', 'gdfgsdg', '0');
-INSERT INTO `adminuser` VALUES ('8', 'admin1', '噢,我想多了', '123456789', '50198456411@qq.com', '123', '0');
-INSERT INTO `adminuser` VALUES ('9', 'admin2', 'admin2', '$2y$13$OrOOomMoQn7Z3REzeIAjxeA/PAqpEyHiIWieagOkoFRwyAZrydMsW', '54454@qq.com', 'dsdfsdf', '0');
+INSERT INTO `adminuser` VALUES ('6', 'dfgdfg', 'dfgsdfg', '501986411@qq.com', '501986411@qq.com', 'sdfgsdfg', '0', '');
+INSERT INTO `adminuser` VALUES ('7', 'admin', 'fgdfg', '501986411@qq.com', 'dfgsf', 'gdfgsdg', '0', '');
+INSERT INTO `adminuser` VALUES ('8', 'admin1', '噢,我想多了', '123456789', '50198456411@qq.com', '123', '0', '');
+INSERT INTO `adminuser` VALUES ('9', 'admin2', 'admin2', '$2y$13$OrOOomMoQn7Z3REzeIAjxeA/PAqpEyHiIWieagOkoFRwyAZrydMsW', '54454@qq.com', 'dsdfsdf', '0', '');
+INSERT INTO `adminuser` VALUES ('10', 'adminuser', 'adminuser', '$2y$13$uCrldaZuTQ43cSTAXwO5E.jAfwoJ4bokJ9Fd7RJ24zCfAbDkQgpMK', '5019864111@qq.com', 'asdfadf', '0', '');
+INSERT INTO `adminuser` VALUES ('11', 'admint', 'admin6', '$2y$13$JSI1i/zdKF1ae0LUYkSiGutGJLGXAk9xEvQVG7Hfy2DV8Vrx4OueW', '5015478744@qq.com', 'sdfsdfdf', '0', '');
 
 -- ----------------------------
 -- Table structure for comment
@@ -173,7 +176,7 @@ CREATE TABLE `user` (
   `created_at` int(11) NOT NULL,
   `updated_at` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of user
@@ -183,3 +186,5 @@ INSERT INTO `user` VALUES ('2', '噢，我想多了', '', '', '', '', '0', '0', 
 INSERT INTO `user` VALUES ('3', 'admin', 'Bt8zaNc2XmBxXtcf_DGiWmxw9wAaOvwx', '$2y$13$uCrldaZuTQ43cSTAXwO5E.jAfwoJ4bokJ9Fd7RJ24zCfAbDkQgpMK', 'TgjsDNS8cwk-bwJBq9TPhMZ3X08YN9qG_1490670502', '501986411@qq.com', '10', '1490424220', '1490670502');
 INSERT INTO `user` VALUES ('4', '程序猿', 'cjgHhwOnHuSdB3EEHUgP5Xdgx-dJrrLE', '$2y$13$.E07cjFnL/.iQwefXQQbNuXNgiccv.6zlA/I0DxJbawv7pmxRKak6', '', '50198641@qq.com', '10', '1490770396', '1490770396');
 INSERT INTO `user` VALUES ('5', 'aa', 'nimqZ87noKA7RLhhq-yAjvo8PKFcclVa', '$2y$13$FJOpt11686fdQ88fhvYOo.txkc5mSCG/W6plxHy2.KOSadTUeSxge', '', '1235@qq.com', '10', '1490780488', '1490780488');
+INSERT INTO `user` VALUES ('6', 'admin1', '0ajfp0hsXpBJgfDYxo8BscPaQQ6IxROO', '$2y$13$NMdFoaTTqCnN17rxQeTGP.CE.M0eC.P9GkcqoAuNdU8DrveUkGHPa', '', 'admin1@qq.com', '10', '1491032820', '1491032820');
+INSERT INTO `user` VALUES ('7', 'chl', 'TMz-dE4cxy5zLCgOFC45xD-Bth0X0tbl', '$2y$13$Ye38e1sDidwPJ6I9aJt2mOQQQIvp0lzdmv8PisdAMn7kJNTD5F7aC', '', '154@qq.com', '10', '1491041629', '1491041629');
