@@ -6,6 +6,7 @@ use yii\web\Controller;
 use yii\filters\VerbFilter;
 use yii\filters\AccessControl;
 use backend\models\AdminLoginForm;
+use yii\web\IdentityInterface;
 /**
  * Site controller
  */
@@ -75,7 +76,7 @@ class SiteController extends Controller
 
         $model = new AdminLoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->redirect(['user/index']);
+            return $this->goBack();
         } else {
             return $this->render('login', [
                 'model' => $model,

@@ -16,6 +16,7 @@ return [
         'request' => [
             'csrfParam' => '_csrf-frontend',
             'baseUrl'=>'',
+            'cookieValidationKey' => 'MZbkJ7bNSn3zSXwdALubu1miC7jBhTrB',
         ],
         'user' => [
             'identityClass' => 'common\models\User',

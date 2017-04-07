@@ -1837,3 +1837,1570 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1491041416.139
     'REQUEST_TIME' => 1491041416
 ]
+2017-04-07 08:41:48 [127.0.0.1][-][774k93c0rnrhluero898n769h7][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "User/index".' in E:\project\advanced\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 E:\project\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('User/index', Array)
+#1 E:\project\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\project\advanced\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in E:\project\advanced\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 E:\project\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\project\advanced\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2017-04-07 08:41:48 [127.0.0.1][-][774k93c0rnrhluero898n769h7][info][application] $_COOKIE = [
+    '_csrf-backend' => 'be2cb5aa6fc719be3f226bd5c85db6b8ab6050f4775d8497558825f662a6bbd0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"odGA2acVuMLokip8Lk7bhWCv_JtSW5sd\";}'
+    'advanced-backend' => '774k93c0rnrhluero898n769h7'
+    '_identity-backend' => '10f12c8953972262b674bb7f7e20df23b12d63d3b89b35f8b4bf6e88bd225ad5a:2:{i:0;s:17:\"_identity-backend\";i:1;s:15:\"[10,\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin'
+    '__id' => 10
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://yii.com/admin/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-backend=be2cb5aa6fc719be3f226bd5c85db6b8ab6050f4775d8497558825f662a6bbd0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22odGA2acVuMLokip8Lk7bhWCv_JtSW5sd%22%3B%7D; advanced-backend=774k93c0rnrhluero898n769h7; _identity-backend=10f12c8953972262b674bb7f7e20df23b12d63d3b89b35f8b4bf6e88bd225ad5a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A15%3A%22%5B10%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\Lenovo;C:\\ProgramData\\Lenovo\\ReadyApps;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;D:\\TortoiseSVN\\bin;D:\\Git\\cmd;D:\\OpenVPN\\bin;C:\\Program Files\\OpenVPN\\bin;d:\\Program Files\\OpenVPN\\bin;D:\\fastKey;D:\\wamp\\bin\\php\\php-7.0.14ts;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at yii.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'yii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/project/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/project/advanced'
+    'SERVER_ADMIN' => 'knight@qq.com'
+    'SCRIPT_FILENAME' => 'E:/project/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '60331'
+    'REDIRECT_URL' => '/backend/web//User/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/User/index'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491547308.825
+    'REQUEST_TIME' => 1491547308
+]
+2017-04-07 08:44:53 [127.0.0.1][-][l6h45nhi1vbr8ef8gr7pg7uf45][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "User/index".' in E:\project\advanced\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 E:\project\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('User/index', Array)
+#1 E:\project\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\project\advanced\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in E:\project\advanced\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 E:\project\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\project\advanced\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2017-04-07 08:44:53 [127.0.0.1][-][l6h45nhi1vbr8ef8gr7pg7uf45][info][application] $_COOKIE = [
+    '_csrf-backend' => 'be2cb5aa6fc719be3f226bd5c85db6b8ab6050f4775d8497558825f662a6bbd0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"odGA2acVuMLokip8Lk7bhWCv_JtSW5sd\";}'
+    'advanced-backend' => 'l6h45nhi1vbr8ef8gr7pg7uf45'
+    '_identity-backend' => '10f12c8953972262b674bb7f7e20df23b12d63d3b89b35f8b4bf6e88bd225ad5a:2:{i:0;s:17:\"_identity-backend\";i:1;s:15:\"[10,\"\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin/site/index'
+    '__id' => 10
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://yii.com/admin/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-backend=be2cb5aa6fc719be3f226bd5c85db6b8ab6050f4775d8497558825f662a6bbd0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22odGA2acVuMLokip8Lk7bhWCv_JtSW5sd%22%3B%7D; advanced-backend=l6h45nhi1vbr8ef8gr7pg7uf45; _identity-backend=10f12c8953972262b674bb7f7e20df23b12d63d3b89b35f8b4bf6e88bd225ad5a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A15%3A%22%5B10%2C%22%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\Lenovo;C:\\ProgramData\\Lenovo\\ReadyApps;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;D:\\TortoiseSVN\\bin;D:\\Git\\cmd;D:\\OpenVPN\\bin;C:\\Program Files\\OpenVPN\\bin;d:\\Program Files\\OpenVPN\\bin;D:\\fastKey;D:\\wamp\\bin\\php\\php-7.0.14ts;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at yii.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'yii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/project/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/project/advanced'
+    'SERVER_ADMIN' => 'knight@qq.com'
+    'SCRIPT_FILENAME' => 'E:/project/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '60617'
+    'REDIRECT_URL' => '/backend/web//User/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/User/index'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491547493.213
+    'REQUEST_TIME' => 1491547493
+]
+2017-04-07 08:45:08 [127.0.0.1][-][l6h45nhi1vbr8ef8gr7pg7uf45][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "User/index".' in E:\project\advanced\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 E:\project\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('User/index', Array)
+#1 E:\project\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\project\advanced\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in E:\project\advanced\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 E:\project\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\project\advanced\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2017-04-07 08:45:08 [127.0.0.1][-][l6h45nhi1vbr8ef8gr7pg7uf45][info][application] $_COOKIE = [
+    '_csrf-backend' => 'be2cb5aa6fc719be3f226bd5c85db6b8ab6050f4775d8497558825f662a6bbd0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"odGA2acVuMLokip8Lk7bhWCv_JtSW5sd\";}'
+    'advanced-backend' => 'l6h45nhi1vbr8ef8gr7pg7uf45'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin/site/index'
+    '__id' => 10
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_PRAGMA' => 'no-cache'
+    'HTTP_CACHE_CONTROL' => 'no-cache'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://yii.com/admin/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-backend=be2cb5aa6fc719be3f226bd5c85db6b8ab6050f4775d8497558825f662a6bbd0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22odGA2acVuMLokip8Lk7bhWCv_JtSW5sd%22%3B%7D; advanced-backend=l6h45nhi1vbr8ef8gr7pg7uf45'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\Lenovo;C:\\ProgramData\\Lenovo\\ReadyApps;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;D:\\TortoiseSVN\\bin;D:\\Git\\cmd;D:\\OpenVPN\\bin;C:\\Program Files\\OpenVPN\\bin;d:\\Program Files\\OpenVPN\\bin;D:\\fastKey;D:\\wamp\\bin\\php\\php-7.0.14ts;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at yii.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'yii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/project/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/project/advanced'
+    'SERVER_ADMIN' => 'knight@qq.com'
+    'SCRIPT_FILENAME' => 'E:/project/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '60661'
+    'REDIRECT_URL' => '/backend/web//User/index'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/User/index'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491547508.591
+    'REQUEST_TIME' => 1491547508
+]
+2017-04-07 12:44:18 [127.0.0.1][-][6gm2hirik3404avv8mqcj83ko7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'common\models\Adminuser ' not found' in E:\project\advanced\vendor\yiisoft\yii2\web\User.php:657
+Stack trace:
+#0 E:\project\advanced\vendor\yiisoft\yii2\web\User.php(333): yii\web\User->getIdentity()
+#1 E:\project\advanced\vendor\yiisoft\yii2\filters\AccessRule.php(156): yii\web\User->getIsGuest()
+#2 E:\project\advanced\vendor\yiisoft\yii2\filters\AccessRule.php(111): yii\filters\AccessRule->matchRole()
+#3 E:\project\advanced\vendor\yiisoft\yii2\filters\AccessControl.php(118): yii\filters\AccessRule->allows()
+#4 E:\project\advanced\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction()
+#5 E:\project\advanced\vendor\yiisoft\yii2\base\Component.php(545): yii\base\ActionFilter->beforeFilter()
+#6 E:\project\advanced\vendor\yiisoft\yii2\base\Component.php(545): ::call_user_func:{E:\project\advanced\vendor\yiisoft\yii2\base\Component.php:545}()
+#7 E:\project\advanced\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger()
+#8 E:\project\advanced\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction()
+#9 E:\project\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction()
+#10 E:\project\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#11 E:\project\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#12 E:\project\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#13 E:\project\advanced\backend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2017-04-07 12:44:17 [127.0.0.1][-][6gm2hirik3404avv8mqcj83ko7][info][application] $_COOKIE = [
+    '_csrf-backend' => 'be2cb5aa6fc719be3f226bd5c85db6b8ab6050f4775d8497558825f662a6bbd0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"odGA2acVuMLokip8Lk7bhWCv_JtSW5sd\";}'
+    'advanced-backend' => '6gm2hirik3404avv8mqcj83ko7'
+    'advanced-frontend' => 'avnkk0nfkpu8ti4d8u1ang1980'
+    '_csrf-frontend' => 'f80642eedeafc1606e6500b7e2a21abb59f5c9069002db22e7f3e90d569deb4da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"UiX5eOn7hiv9iPtWkUycoDilu4aOJRRM\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin/site/index'
+    '__id' => 10
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-backend=be2cb5aa6fc719be3f226bd5c85db6b8ab6050f4775d8497558825f662a6bbd0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22odGA2acVuMLokip8Lk7bhWCv_JtSW5sd%22%3B%7D; advanced-backend=6gm2hirik3404avv8mqcj83ko7; advanced-frontend=avnkk0nfkpu8ti4d8u1ang1980; _csrf-frontend=f80642eedeafc1606e6500b7e2a21abb59f5c9069002db22e7f3e90d569deb4da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22UiX5eOn7hiv9iPtWkUycoDilu4aOJRRM%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\Lenovo;C:\\ProgramData\\Lenovo\\ReadyApps;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;D:\\TortoiseSVN\\bin;D:\\Git\\cmd;D:\\OpenVPN\\bin;C:\\Program Files\\OpenVPN\\bin;d:\\Program Files\\OpenVPN\\bin;D:\\fastKey;D:\\wamp\\bin\\php\\php-7.0.14ts;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at yii.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'yii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/project/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/project/advanced'
+    'SERVER_ADMIN' => 'knight@qq.com'
+    'SCRIPT_FILENAME' => 'E:/project/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '56130'
+    'REDIRECT_URL' => '/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491561857.989
+    'REQUEST_TIME' => 1491561857
+]
+2017-04-07 12:47:06 [127.0.0.1][-][6gm2hirik3404avv8mqcj83ko7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'common\models\Adminuser ' not found' in E:\project\advanced\vendor\yiisoft\yii2\web\User.php:657
+Stack trace:
+#0 E:\project\advanced\vendor\yiisoft\yii2\web\User.php(333): yii\web\User->getIdentity()
+#1 E:\project\advanced\vendor\yiisoft\yii2\filters\AccessRule.php(156): yii\web\User->getIsGuest()
+#2 E:\project\advanced\vendor\yiisoft\yii2\filters\AccessRule.php(111): yii\filters\AccessRule->matchRole()
+#3 E:\project\advanced\vendor\yiisoft\yii2\filters\AccessControl.php(118): yii\filters\AccessRule->allows()
+#4 E:\project\advanced\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction()
+#5 E:\project\advanced\vendor\yiisoft\yii2\base\Component.php(545): yii\base\ActionFilter->beforeFilter()
+#6 E:\project\advanced\vendor\yiisoft\yii2\base\Component.php(545): ::call_user_func:{E:\project\advanced\vendor\yiisoft\yii2\base\Component.php:545}()
+#7 E:\project\advanced\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger()
+#8 E:\project\advanced\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction()
+#9 E:\project\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction()
+#10 E:\project\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#11 E:\project\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#12 E:\project\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#13 E:\project\advanced\backend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2017-04-07 12:47:06 [127.0.0.1][-][6gm2hirik3404avv8mqcj83ko7][info][application] $_COOKIE = [
+    '_csrf-backend' => 'be2cb5aa6fc719be3f226bd5c85db6b8ab6050f4775d8497558825f662a6bbd0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"odGA2acVuMLokip8Lk7bhWCv_JtSW5sd\";}'
+    'advanced-backend' => '6gm2hirik3404avv8mqcj83ko7'
+    'advanced-frontend' => 'avnkk0nfkpu8ti4d8u1ang1980'
+    '_csrf-frontend' => 'f80642eedeafc1606e6500b7e2a21abb59f5c9069002db22e7f3e90d569deb4da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"UiX5eOn7hiv9iPtWkUycoDilu4aOJRRM\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin/site/index'
+    '__id' => 10
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-backend=be2cb5aa6fc719be3f226bd5c85db6b8ab6050f4775d8497558825f662a6bbd0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22odGA2acVuMLokip8Lk7bhWCv_JtSW5sd%22%3B%7D; advanced-backend=6gm2hirik3404avv8mqcj83ko7; advanced-frontend=avnkk0nfkpu8ti4d8u1ang1980; _csrf-frontend=f80642eedeafc1606e6500b7e2a21abb59f5c9069002db22e7f3e90d569deb4da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22UiX5eOn7hiv9iPtWkUycoDilu4aOJRRM%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\Lenovo;C:\\ProgramData\\Lenovo\\ReadyApps;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;D:\\TortoiseSVN\\bin;D:\\Git\\cmd;D:\\OpenVPN\\bin;C:\\Program Files\\OpenVPN\\bin;d:\\Program Files\\OpenVPN\\bin;D:\\fastKey;D:\\wamp\\bin\\php\\php-7.0.14ts;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at yii.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'yii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/project/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/project/advanced'
+    'SERVER_ADMIN' => 'knight@qq.com'
+    'SCRIPT_FILENAME' => 'E:/project/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '56270'
+    'REDIRECT_URL' => '/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491562026.626
+    'REQUEST_TIME' => 1491562026
+]
+2017-04-07 12:47:45 [127.0.0.1][-][6gm2hirik3404avv8mqcj83ko7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'common\models\Adminuser ' not found' in E:\project\advanced\vendor\yiisoft\yii2\web\User.php:657
+Stack trace:
+#0 E:\project\advanced\vendor\yiisoft\yii2\web\User.php(333): yii\web\User->getIdentity()
+#1 E:\project\advanced\vendor\yiisoft\yii2\filters\AccessRule.php(156): yii\web\User->getIsGuest()
+#2 E:\project\advanced\vendor\yiisoft\yii2\filters\AccessRule.php(111): yii\filters\AccessRule->matchRole()
+#3 E:\project\advanced\vendor\yiisoft\yii2\filters\AccessControl.php(118): yii\filters\AccessRule->allows()
+#4 E:\project\advanced\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction()
+#5 E:\project\advanced\vendor\yiisoft\yii2\base\Component.php(545): yii\base\ActionFilter->beforeFilter()
+#6 E:\project\advanced\vendor\yiisoft\yii2\base\Component.php(545): ::call_user_func:{E:\project\advanced\vendor\yiisoft\yii2\base\Component.php:545}()
+#7 E:\project\advanced\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger()
+#8 E:\project\advanced\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction()
+#9 E:\project\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction()
+#10 E:\project\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#11 E:\project\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#12 E:\project\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#13 E:\project\advanced\backend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2017-04-07 12:47:45 [127.0.0.1][-][6gm2hirik3404avv8mqcj83ko7][info][application] $_COOKIE = [
+    '_csrf-backend' => 'be2cb5aa6fc719be3f226bd5c85db6b8ab6050f4775d8497558825f662a6bbd0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"odGA2acVuMLokip8Lk7bhWCv_JtSW5sd\";}'
+    'advanced-backend' => '6gm2hirik3404avv8mqcj83ko7'
+    'advanced-frontend' => 'avnkk0nfkpu8ti4d8u1ang1980'
+    '_csrf-frontend' => 'f80642eedeafc1606e6500b7e2a21abb59f5c9069002db22e7f3e90d569deb4da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"UiX5eOn7hiv9iPtWkUycoDilu4aOJRRM\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin/site/index'
+    '__id' => 10
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-backend=be2cb5aa6fc719be3f226bd5c85db6b8ab6050f4775d8497558825f662a6bbd0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22odGA2acVuMLokip8Lk7bhWCv_JtSW5sd%22%3B%7D; advanced-backend=6gm2hirik3404avv8mqcj83ko7; advanced-frontend=avnkk0nfkpu8ti4d8u1ang1980; _csrf-frontend=f80642eedeafc1606e6500b7e2a21abb59f5c9069002db22e7f3e90d569deb4da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22UiX5eOn7hiv9iPtWkUycoDilu4aOJRRM%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\Lenovo;C:\\ProgramData\\Lenovo\\ReadyApps;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;D:\\TortoiseSVN\\bin;D:\\Git\\cmd;D:\\OpenVPN\\bin;C:\\Program Files\\OpenVPN\\bin;d:\\Program Files\\OpenVPN\\bin;D:\\fastKey;D:\\wamp\\bin\\php\\php-7.0.14ts;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at yii.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'yii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/project/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/project/advanced'
+    'SERVER_ADMIN' => 'knight@qq.com'
+    'SCRIPT_FILENAME' => 'E:/project/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '56292'
+    'REDIRECT_URL' => '/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491562065.24
+    'REQUEST_TIME' => 1491562065
+]
+2017-04-07 12:49:50 [127.0.0.1][-][6gm2hirik3404avv8mqcj83ko7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'common\models\Adminuser ' not found' in E:\project\advanced\vendor\yiisoft\yii2\web\User.php:657
+Stack trace:
+#0 E:\project\advanced\vendor\yiisoft\yii2\web\User.php(333): yii\web\User->getIdentity()
+#1 E:\project\advanced\vendor\yiisoft\yii2\filters\AccessRule.php(156): yii\web\User->getIsGuest()
+#2 E:\project\advanced\vendor\yiisoft\yii2\filters\AccessRule.php(111): yii\filters\AccessRule->matchRole()
+#3 E:\project\advanced\vendor\yiisoft\yii2\filters\AccessControl.php(118): yii\filters\AccessRule->allows()
+#4 E:\project\advanced\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction()
+#5 E:\project\advanced\vendor\yiisoft\yii2\base\Component.php(545): yii\base\ActionFilter->beforeFilter()
+#6 E:\project\advanced\vendor\yiisoft\yii2\base\Component.php(545): ::call_user_func:{E:\project\advanced\vendor\yiisoft\yii2\base\Component.php:545}()
+#7 E:\project\advanced\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger()
+#8 E:\project\advanced\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction()
+#9 E:\project\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction()
+#10 E:\project\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#11 E:\project\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#12 E:\project\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#13 E:\project\advanced\backend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2017-04-07 12:49:49 [127.0.0.1][-][6gm2hirik3404avv8mqcj83ko7][info][application] $_COOKIE = [
+    '_csrf-backend' => 'be2cb5aa6fc719be3f226bd5c85db6b8ab6050f4775d8497558825f662a6bbd0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"odGA2acVuMLokip8Lk7bhWCv_JtSW5sd\";}'
+    'advanced-backend' => '6gm2hirik3404avv8mqcj83ko7'
+    'advanced-frontend' => 'avnkk0nfkpu8ti4d8u1ang1980'
+    '_csrf-frontend' => 'f80642eedeafc1606e6500b7e2a21abb59f5c9069002db22e7f3e90d569deb4da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"UiX5eOn7hiv9iPtWkUycoDilu4aOJRRM\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin/site/index'
+    '__id' => 10
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-backend=be2cb5aa6fc719be3f226bd5c85db6b8ab6050f4775d8497558825f662a6bbd0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22odGA2acVuMLokip8Lk7bhWCv_JtSW5sd%22%3B%7D; advanced-backend=6gm2hirik3404avv8mqcj83ko7; advanced-frontend=avnkk0nfkpu8ti4d8u1ang1980; _csrf-frontend=f80642eedeafc1606e6500b7e2a21abb59f5c9069002db22e7f3e90d569deb4da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22UiX5eOn7hiv9iPtWkUycoDilu4aOJRRM%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\Lenovo;C:\\ProgramData\\Lenovo\\ReadyApps;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;D:\\TortoiseSVN\\bin;D:\\Git\\cmd;D:\\OpenVPN\\bin;C:\\Program Files\\OpenVPN\\bin;d:\\Program Files\\OpenVPN\\bin;D:\\fastKey;D:\\wamp\\bin\\php\\php-7.0.14ts;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at yii.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'yii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/project/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/project/advanced'
+    'SERVER_ADMIN' => 'knight@qq.com'
+    'SCRIPT_FILENAME' => 'E:/project/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '56377'
+    'REDIRECT_URL' => '/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491562189.838
+    'REQUEST_TIME' => 1491562189
+]
+2017-04-07 12:52:04 [127.0.0.1][-][6gm2hirik3404avv8mqcj83ko7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'common\models\Adminuser ' not found' in E:\project\advanced\vendor\yiisoft\yii2\web\User.php:657
+Stack trace:
+#0 E:\project\advanced\vendor\yiisoft\yii2\web\User.php(333): yii\web\User->getIdentity()
+#1 E:\project\advanced\vendor\yiisoft\yii2\filters\AccessRule.php(156): yii\web\User->getIsGuest()
+#2 E:\project\advanced\vendor\yiisoft\yii2\filters\AccessRule.php(111): yii\filters\AccessRule->matchRole()
+#3 E:\project\advanced\vendor\yiisoft\yii2\filters\AccessControl.php(118): yii\filters\AccessRule->allows()
+#4 E:\project\advanced\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction()
+#5 E:\project\advanced\vendor\yiisoft\yii2\base\Component.php(545): yii\base\ActionFilter->beforeFilter()
+#6 E:\project\advanced\vendor\yiisoft\yii2\base\Component.php(545): ::call_user_func:{E:\project\advanced\vendor\yiisoft\yii2\base\Component.php:545}()
+#7 E:\project\advanced\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger()
+#8 E:\project\advanced\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction()
+#9 E:\project\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction()
+#10 E:\project\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#11 E:\project\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#12 E:\project\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#13 E:\project\advanced\backend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2017-04-07 12:52:04 [127.0.0.1][-][6gm2hirik3404avv8mqcj83ko7][info][application] $_COOKIE = [
+    '_csrf-backend' => 'be2cb5aa6fc719be3f226bd5c85db6b8ab6050f4775d8497558825f662a6bbd0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"odGA2acVuMLokip8Lk7bhWCv_JtSW5sd\";}'
+    'advanced-backend' => '6gm2hirik3404avv8mqcj83ko7'
+    'advanced-frontend' => 'avnkk0nfkpu8ti4d8u1ang1980'
+    '_csrf-frontend' => 'f80642eedeafc1606e6500b7e2a21abb59f5c9069002db22e7f3e90d569deb4da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"UiX5eOn7hiv9iPtWkUycoDilu4aOJRRM\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin/site/index'
+    '__id' => 10
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-backend=be2cb5aa6fc719be3f226bd5c85db6b8ab6050f4775d8497558825f662a6bbd0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22odGA2acVuMLokip8Lk7bhWCv_JtSW5sd%22%3B%7D; advanced-backend=6gm2hirik3404avv8mqcj83ko7; advanced-frontend=avnkk0nfkpu8ti4d8u1ang1980; _csrf-frontend=f80642eedeafc1606e6500b7e2a21abb59f5c9069002db22e7f3e90d569deb4da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22UiX5eOn7hiv9iPtWkUycoDilu4aOJRRM%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\Lenovo;C:\\ProgramData\\Lenovo\\ReadyApps;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;D:\\TortoiseSVN\\bin;D:\\Git\\cmd;D:\\OpenVPN\\bin;C:\\Program Files\\OpenVPN\\bin;d:\\Program Files\\OpenVPN\\bin;D:\\fastKey;D:\\wamp\\bin\\php\\php-7.0.14ts;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at yii.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'yii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/project/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/project/advanced'
+    'SERVER_ADMIN' => 'knight@qq.com'
+    'SCRIPT_FILENAME' => 'E:/project/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '56455'
+    'REDIRECT_URL' => '/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491562324.427
+    'REQUEST_TIME' => 1491562324
+]
+2017-04-07 12:53:16 [127.0.0.1][-][6gm2hirik3404avv8mqcj83ko7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'common\models\Adminuser ' not found' in E:\project\advanced\vendor\yiisoft\yii2\web\User.php:657
+Stack trace:
+#0 E:\project\advanced\vendor\yiisoft\yii2\web\User.php(333): yii\web\User->getIdentity()
+#1 E:\project\advanced\vendor\yiisoft\yii2\filters\AccessRule.php(156): yii\web\User->getIsGuest()
+#2 E:\project\advanced\vendor\yiisoft\yii2\filters\AccessRule.php(111): yii\filters\AccessRule->matchRole()
+#3 E:\project\advanced\vendor\yiisoft\yii2\filters\AccessControl.php(118): yii\filters\AccessRule->allows()
+#4 E:\project\advanced\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction()
+#5 E:\project\advanced\vendor\yiisoft\yii2\base\Component.php(545): yii\base\ActionFilter->beforeFilter()
+#6 E:\project\advanced\vendor\yiisoft\yii2\base\Component.php(545): ::call_user_func:{E:\project\advanced\vendor\yiisoft\yii2\base\Component.php:545}()
+#7 E:\project\advanced\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger()
+#8 E:\project\advanced\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction()
+#9 E:\project\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction()
+#10 E:\project\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#11 E:\project\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#12 E:\project\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#13 E:\project\advanced\backend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2017-04-07 12:53:16 [127.0.0.1][-][6gm2hirik3404avv8mqcj83ko7][info][application] $_COOKIE = [
+    '_csrf-backend' => 'be2cb5aa6fc719be3f226bd5c85db6b8ab6050f4775d8497558825f662a6bbd0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"odGA2acVuMLokip8Lk7bhWCv_JtSW5sd\";}'
+    'advanced-backend' => '6gm2hirik3404avv8mqcj83ko7'
+    'advanced-frontend' => 'avnkk0nfkpu8ti4d8u1ang1980'
+    '_csrf-frontend' => 'f80642eedeafc1606e6500b7e2a21abb59f5c9069002db22e7f3e90d569deb4da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"UiX5eOn7hiv9iPtWkUycoDilu4aOJRRM\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin/site/index'
+    '__id' => 10
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-backend=be2cb5aa6fc719be3f226bd5c85db6b8ab6050f4775d8497558825f662a6bbd0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22odGA2acVuMLokip8Lk7bhWCv_JtSW5sd%22%3B%7D; advanced-backend=6gm2hirik3404avv8mqcj83ko7; advanced-frontend=avnkk0nfkpu8ti4d8u1ang1980; _csrf-frontend=f80642eedeafc1606e6500b7e2a21abb59f5c9069002db22e7f3e90d569deb4da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22UiX5eOn7hiv9iPtWkUycoDilu4aOJRRM%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\Lenovo;C:\\ProgramData\\Lenovo\\ReadyApps;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;D:\\TortoiseSVN\\bin;D:\\Git\\cmd;D:\\OpenVPN\\bin;C:\\Program Files\\OpenVPN\\bin;d:\\Program Files\\OpenVPN\\bin;D:\\fastKey;D:\\wamp\\bin\\php\\php-7.0.14ts;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at yii.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'yii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/project/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/project/advanced'
+    'SERVER_ADMIN' => 'knight@qq.com'
+    'SCRIPT_FILENAME' => 'E:/project/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '56494'
+    'REDIRECT_URL' => '/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491562396.596
+    'REQUEST_TIME' => 1491562396
+]
+2017-04-07 12:54:06 [127.0.0.1][-][6gm2hirik3404avv8mqcj83ko7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'common\models\Adminuser ' not found' in E:\project\advanced\vendor\yiisoft\yii2\web\User.php:657
+Stack trace:
+#0 E:\project\advanced\vendor\yiisoft\yii2\web\User.php(333): yii\web\User->getIdentity()
+#1 E:\project\advanced\vendor\yiisoft\yii2\filters\AccessRule.php(156): yii\web\User->getIsGuest()
+#2 E:\project\advanced\vendor\yiisoft\yii2\filters\AccessRule.php(111): yii\filters\AccessRule->matchRole()
+#3 E:\project\advanced\vendor\yiisoft\yii2\filters\AccessControl.php(118): yii\filters\AccessRule->allows()
+#4 E:\project\advanced\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction()
+#5 E:\project\advanced\vendor\yiisoft\yii2\base\Component.php(545): yii\base\ActionFilter->beforeFilter()
+#6 E:\project\advanced\vendor\yiisoft\yii2\base\Component.php(545): ::call_user_func:{E:\project\advanced\vendor\yiisoft\yii2\base\Component.php:545}()
+#7 E:\project\advanced\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger()
+#8 E:\project\advanced\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction()
+#9 E:\project\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction()
+#10 E:\project\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#11 E:\project\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#12 E:\project\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#13 E:\project\advanced\backend\web\index.php(18): yii\base\Application->run()
+#14 {main}
+2017-04-07 12:54:06 [127.0.0.1][-][6gm2hirik3404avv8mqcj83ko7][info][application] $_COOKIE = [
+    '_csrf-backend' => 'be2cb5aa6fc719be3f226bd5c85db6b8ab6050f4775d8497558825f662a6bbd0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"odGA2acVuMLokip8Lk7bhWCv_JtSW5sd\";}'
+    'advanced-backend' => '6gm2hirik3404avv8mqcj83ko7'
+    'advanced-frontend' => 'avnkk0nfkpu8ti4d8u1ang1980'
+    '_csrf-frontend' => 'f80642eedeafc1606e6500b7e2a21abb59f5c9069002db22e7f3e90d569deb4da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"UiX5eOn7hiv9iPtWkUycoDilu4aOJRRM\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin/site/index'
+    '__id' => 10
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-backend=be2cb5aa6fc719be3f226bd5c85db6b8ab6050f4775d8497558825f662a6bbd0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22odGA2acVuMLokip8Lk7bhWCv_JtSW5sd%22%3B%7D; advanced-backend=6gm2hirik3404avv8mqcj83ko7; advanced-frontend=avnkk0nfkpu8ti4d8u1ang1980; _csrf-frontend=f80642eedeafc1606e6500b7e2a21abb59f5c9069002db22e7f3e90d569deb4da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22UiX5eOn7hiv9iPtWkUycoDilu4aOJRRM%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\Lenovo;C:\\ProgramData\\Lenovo\\ReadyApps;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;D:\\TortoiseSVN\\bin;D:\\Git\\cmd;D:\\OpenVPN\\bin;C:\\Program Files\\OpenVPN\\bin;d:\\Program Files\\OpenVPN\\bin;D:\\fastKey;D:\\wamp\\bin\\php\\php-7.0.14ts;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at yii.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'yii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/project/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/project/advanced'
+    'SERVER_ADMIN' => 'knight@qq.com'
+    'SCRIPT_FILENAME' => 'E:/project/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '56543'
+    'REDIRECT_URL' => '/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491562446.025
+    'REQUEST_TIME' => 1491562446
+]
+2017-04-07 12:56:04 [127.0.0.1][-][6gm2hirik3404avv8mqcj83ko7][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Undefined class constant 'STATUS_ACTIVE'' in E:\project\advanced\common\models\Adminuser.php:99
+Stack trace:
+#0 E:\project\advanced\vendor\yiisoft\yii2\web\User.php(188): yii\web\User->renewAuthStatus()
+#1 E:\project\advanced\vendor\yiisoft\yii2\web\User.php(333): yii\web\User->getIdentity()
+#2 E:\project\advanced\vendor\yiisoft\yii2\filters\AccessRule.php(156): yii\web\User->getIsGuest()
+#3 E:\project\advanced\vendor\yiisoft\yii2\filters\AccessRule.php(111): yii\filters\AccessRule->matchRole()
+#4 E:\project\advanced\vendor\yiisoft\yii2\filters\AccessControl.php(118): yii\filters\AccessRule->allows()
+#5 E:\project\advanced\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction()
+#6 E:\project\advanced\vendor\yiisoft\yii2\base\Component.php(545): yii\base\ActionFilter->beforeFilter()
+#7 E:\project\advanced\vendor\yiisoft\yii2\base\Component.php(545): ::call_user_func:{E:\project\advanced\vendor\yiisoft\yii2\base\Component.php:545}()
+#8 E:\project\advanced\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger()
+#9 E:\project\advanced\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction()
+#10 E:\project\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction()
+#11 E:\project\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#12 E:\project\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#13 E:\project\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#14 E:\project\advanced\backend\web\index.php(18): yii\base\Application->run()
+#15 {main}
+2017-04-07 12:56:04 [127.0.0.1][-][6gm2hirik3404avv8mqcj83ko7][info][application] $_COOKIE = [
+    '_csrf-backend' => 'be2cb5aa6fc719be3f226bd5c85db6b8ab6050f4775d8497558825f662a6bbd0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"odGA2acVuMLokip8Lk7bhWCv_JtSW5sd\";}'
+    'advanced-backend' => '6gm2hirik3404avv8mqcj83ko7'
+    'advanced-frontend' => 'avnkk0nfkpu8ti4d8u1ang1980'
+    '_csrf-frontend' => 'f80642eedeafc1606e6500b7e2a21abb59f5c9069002db22e7f3e90d569deb4da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"UiX5eOn7hiv9iPtWkUycoDilu4aOJRRM\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin/site/index'
+    '__id' => 10
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-backend=be2cb5aa6fc719be3f226bd5c85db6b8ab6050f4775d8497558825f662a6bbd0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22odGA2acVuMLokip8Lk7bhWCv_JtSW5sd%22%3B%7D; advanced-backend=6gm2hirik3404avv8mqcj83ko7; advanced-frontend=avnkk0nfkpu8ti4d8u1ang1980; _csrf-frontend=f80642eedeafc1606e6500b7e2a21abb59f5c9069002db22e7f3e90d569deb4da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22UiX5eOn7hiv9iPtWkUycoDilu4aOJRRM%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\Lenovo;C:\\ProgramData\\Lenovo\\ReadyApps;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;D:\\TortoiseSVN\\bin;D:\\Git\\cmd;D:\\OpenVPN\\bin;C:\\Program Files\\OpenVPN\\bin;d:\\Program Files\\OpenVPN\\bin;D:\\fastKey;D:\\wamp\\bin\\php\\php-7.0.14ts;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at yii.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'yii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/project/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/project/advanced'
+    'SERVER_ADMIN' => 'knight@qq.com'
+    'SCRIPT_FILENAME' => 'E:/project/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '56616'
+    'REDIRECT_URL' => '/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491562564.799
+    'REQUEST_TIME' => 1491562564
+]
+2017-04-07 12:56:22 [127.0.0.1][-][6gm2hirik3404avv8mqcj83ko7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Champ 'status' inconnu dans where clause' in E:\project\advanced\vendor\yiisoft\yii2\db\Command.php:902
+Stack trace:
+#0 E:\project\advanced\vendor\yiisoft\yii2\db\Command.php(902): PDOStatement->execute()
+#1 E:\project\advanced\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 E:\project\advanced\vendor\yiisoft\yii2\db\Query.php(253): yii\db\Command->queryOne()
+#3 E:\project\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(295): yii\db\Query->one('<span class="ke...')
+#4 E:\project\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#5 E:\project\advanced\common\models\Adminuser.php(101): yii\db\BaseActiveRecord::findOne('[<span class="s...')
+#6 E:\project\advanced\vendor\yiisoft\yii2\web\User.php(657): common\models\Adminuser::findIdentity('<span class="nu...')
+#7 E:\project\advanced\vendor\yiisoft\yii2\web\User.php(188): yii\web\User->renewAuthStatus()
+#8 E:\project\advanced\vendor\yiisoft\yii2\web\User.php(333): yii\web\User->getIdentity()
+#9 E:\project\advanced\vendor\yiisoft\yii2\filters\AccessRule.php(156): yii\web\User->getIsGuest()
+#10 E:\project\advanced\vendor\yiisoft\yii2\filters\AccessRule.php(111): yii\filters\AccessRule->matchRole(Object(yii\web\User))
+#11 E:\project\advanced\vendor\yiisoft\yii2\filters\AccessControl.php(118): yii\filters\AccessRule->allows(Object(yii\base\InlineAction), Object(yii\web\User), Object(yii\web\Request))
+#12 E:\project\advanced\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#13 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#14 E:\project\advanced\vendor\yiisoft\yii2\base\Component.php(545): call_user_func('[<span class="t...', Object(yii\base\ActionEvent))
+#15 E:\project\advanced\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('<span class="st...', Object(yii\base\ActionEvent))
+#16 E:\project\advanced\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#17 E:\project\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#18 E:\project\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[]')
+#19 E:\project\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[]')
+#20 E:\project\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 E:\project\advanced\backend\web\index.php(18): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Champ 'status' inconnu dans where clause
+The SQL being executed was: SELECT * FROM `adminuser` WHERE (`id`=10) AND (`status`=10)' in E:\project\advanced\vendor\yiisoft\yii2\db\Schema.php:636
+Stack trace:
+#0 E:\project\advanced\vendor\yiisoft\yii2\db\Command.php(917): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 E:\project\advanced\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#2 E:\project\advanced\vendor\yiisoft\yii2\db\Query.php(253): yii\db\Command->queryOne()
+#3 E:\project\advanced\vendor\yiisoft\yii2\db\ActiveQuery.php(295): yii\db\Query->one('<span class="ke...')
+#4 E:\project\advanced\vendor\yiisoft\yii2\db\BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#5 E:\project\advanced\common\models\Adminuser.php(101): yii\db\BaseActiveRecord::findOne('[<span class="s...')
+#6 E:\project\advanced\vendor\yiisoft\yii2\web\User.php(657): common\models\Adminuser::findIdentity('<span class="nu...')
+#7 E:\project\advanced\vendor\yiisoft\yii2\web\User.php(188): yii\web\User->renewAuthStatus()
+#8 E:\project\advanced\vendor\yiisoft\yii2\web\User.php(333): yii\web\User->getIdentity()
+#9 E:\project\advanced\vendor\yiisoft\yii2\filters\AccessRule.php(156): yii\web\User->getIsGuest()
+#10 E:\project\advanced\vendor\yiisoft\yii2\filters\AccessRule.php(111): yii\filters\AccessRule->matchRole(Object(yii\web\User))
+#11 E:\project\advanced\vendor\yiisoft\yii2\filters\AccessControl.php(118): yii\filters\AccessRule->allows(Object(yii\base\InlineAction), Object(yii\web\User), Object(yii\web\Request))
+#12 E:\project\advanced\vendor\yiisoft\yii2\base\ActionFilter.php(75): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#13 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#14 E:\project\advanced\vendor\yiisoft\yii2\base\Component.php(545): call_user_func('[<span class="t...', Object(yii\base\ActionEvent))
+#15 E:\project\advanced\vendor\yiisoft\yii2\base\Controller.php(272): yii\base\Component->trigger('<span class="st...', Object(yii\base\ActionEvent))
+#16 E:\project\advanced\vendor\yiisoft\yii2\web\Controller.php(164): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#17 E:\project\advanced\vendor\yiisoft\yii2\base\Controller.php(154): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#18 E:\project\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('<span class="st...', '[]')
+#19 E:\project\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('<span class="st...', '[]')
+#20 E:\project\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 E:\project\advanced\backend\web\index.php(18): yii\base\Application->run()
+#22 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Champ 'status' inconnu dans where clause
+)
+
+2017-04-07 12:56:22 [127.0.0.1][-][6gm2hirik3404avv8mqcj83ko7][info][application] $_COOKIE = [
+    '_csrf-backend' => 'be2cb5aa6fc719be3f226bd5c85db6b8ab6050f4775d8497558825f662a6bbd0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"odGA2acVuMLokip8Lk7bhWCv_JtSW5sd\";}'
+    'advanced-backend' => '6gm2hirik3404avv8mqcj83ko7'
+    'advanced-frontend' => 'avnkk0nfkpu8ti4d8u1ang1980'
+    '_csrf-frontend' => 'f80642eedeafc1606e6500b7e2a21abb59f5c9069002db22e7f3e90d569deb4da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"UiX5eOn7hiv9iPtWkUycoDilu4aOJRRM\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin/site/index'
+    '__id' => 10
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-backend=be2cb5aa6fc719be3f226bd5c85db6b8ab6050f4775d8497558825f662a6bbd0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22odGA2acVuMLokip8Lk7bhWCv_JtSW5sd%22%3B%7D; advanced-backend=6gm2hirik3404avv8mqcj83ko7; advanced-frontend=avnkk0nfkpu8ti4d8u1ang1980; _csrf-frontend=f80642eedeafc1606e6500b7e2a21abb59f5c9069002db22e7f3e90d569deb4da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22UiX5eOn7hiv9iPtWkUycoDilu4aOJRRM%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\Lenovo;C:\\ProgramData\\Lenovo\\ReadyApps;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;D:\\TortoiseSVN\\bin;D:\\Git\\cmd;D:\\OpenVPN\\bin;C:\\Program Files\\OpenVPN\\bin;d:\\Program Files\\OpenVPN\\bin;D:\\fastKey;D:\\wamp\\bin\\php\\php-7.0.14ts;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at yii.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'yii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/project/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/project/advanced'
+    'SERVER_ADMIN' => 'knight@qq.com'
+    'SCRIPT_FILENAME' => 'E:/project/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '56621'
+    'REDIRECT_URL' => '/admin'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491562582.489
+    'REQUEST_TIME' => 1491562582
+]
+2017-04-07 13:08:54 [127.0.0.1][-][lmi8stpr6112lqsndlq01p3rv0][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Hash is invalid.' in E:\project\advanced\vendor\yiisoft\yii2\base\Security.php:639
+Stack trace:
+#0 E:\project\advanced\common\models\Adminuser.php(141): yii\base\Security->validatePassword('admin', '501986411@qq.co...')
+#1 E:\project\advanced\backend\models\AdminLoginForm.php(46): common\models\Adminuser->validatePassword('admin')
+#2 [internal function]: backend\models\AdminLoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator))
+#3 E:\project\advanced\vendor\yiisoft\yii2\validators\InlineValidator.php(72): call_user_func(Array, 'password', NULL, Object(yii\validators\InlineValidator))
+#4 E:\project\advanced\vendor\yiisoft\yii2\validators\Validator.php(267): yii\validators\InlineValidator->validateAttribute(Object(backend\models\AdminLoginForm), 'password')
+#5 E:\project\advanced\vendor\yiisoft\yii2\base\Model.php(358): yii\validators\Validator->validateAttributes(Object(backend\models\AdminLoginForm), Array)
+#6 E:\project\advanced\backend\models\AdminLoginForm.php(60): yii\base\Model->validate()
+#7 E:\project\advanced\backend\controllers\SiteController.php(78): backend\models\AdminLoginForm->login()
+#8 [internal function]: backend\controllers\SiteController->actionLogin()
+#9 E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 E:\project\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 E:\project\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('login', Array)
+#12 E:\project\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/login', Array)
+#13 E:\project\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 E:\project\advanced\backend\web\index.php(18): yii\base\Application->run()
+#15 {main}
+2017-04-07 13:08:54 [127.0.0.1][-][lmi8stpr6112lqsndlq01p3rv0][info][application] $_POST = [
+    '_csrf-backend' => 'WkNEUW5rdVM1JwMQXAoWBS8OCD4FAgVrFihzMwY8NiUFCTACOV4GNw=='
+    'AdminLoginForm' => [
+        'username' => 'admin'
+        'password' => 'admin'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'be2cb5aa6fc719be3f226bd5c85db6b8ab6050f4775d8497558825f662a6bbd0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"odGA2acVuMLokip8Lk7bhWCv_JtSW5sd\";}'
+    'advanced-frontend' => 'avnkk0nfkpu8ti4d8u1ang1980'
+    '_csrf-frontend' => 'f80642eedeafc1606e6500b7e2a21abb59f5c9069002db22e7f3e90d569deb4da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"UiX5eOn7hiv9iPtWkUycoDilu4aOJRRM\";}'
+    'advanced-backend' => 'lmi8stpr6112lqsndlq01p3rv0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '224'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://yii.com'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://yii.com/admin/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-backend=be2cb5aa6fc719be3f226bd5c85db6b8ab6050f4775d8497558825f662a6bbd0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22odGA2acVuMLokip8Lk7bhWCv_JtSW5sd%22%3B%7D; advanced-frontend=avnkk0nfkpu8ti4d8u1ang1980; _csrf-frontend=f80642eedeafc1606e6500b7e2a21abb59f5c9069002db22e7f3e90d569deb4da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22UiX5eOn7hiv9iPtWkUycoDilu4aOJRRM%22%3B%7D; advanced-backend=lmi8stpr6112lqsndlq01p3rv0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\Lenovo;C:\\ProgramData\\Lenovo\\ReadyApps;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;D:\\TortoiseSVN\\bin;D:\\Git\\cmd;D:\\OpenVPN\\bin;C:\\Program Files\\OpenVPN\\bin;d:\\Program Files\\OpenVPN\\bin;D:\\fastKey;D:\\wamp\\bin\\php\\php-7.0.14ts;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at yii.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'yii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/project/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/project/advanced'
+    'SERVER_ADMIN' => 'knight@qq.com'
+    'SCRIPT_FILENAME' => 'E:/project/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '57045'
+    'REDIRECT_URL' => '/backend/web//site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/site/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491563334.694
+    'REQUEST_TIME' => 1491563334
+]
+2017-04-07 13:09:05 [127.0.0.1][-][lmi8stpr6112lqsndlq01p3rv0][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Hash is invalid.' in E:\project\advanced\vendor\yiisoft\yii2\base\Security.php:639
+Stack trace:
+#0 E:\project\advanced\common\models\Adminuser.php(141): yii\base\Security->validatePassword('admin', '501986411@qq.co...')
+#1 E:\project\advanced\backend\models\AdminLoginForm.php(46): common\models\Adminuser->validatePassword('admin')
+#2 [internal function]: backend\models\AdminLoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator))
+#3 E:\project\advanced\vendor\yiisoft\yii2\validators\InlineValidator.php(72): call_user_func(Array, 'password', NULL, Object(yii\validators\InlineValidator))
+#4 E:\project\advanced\vendor\yiisoft\yii2\validators\Validator.php(267): yii\validators\InlineValidator->validateAttribute(Object(backend\models\AdminLoginForm), 'password')
+#5 E:\project\advanced\vendor\yiisoft\yii2\base\Model.php(358): yii\validators\Validator->validateAttributes(Object(backend\models\AdminLoginForm), Array)
+#6 E:\project\advanced\backend\models\AdminLoginForm.php(60): yii\base\Model->validate()
+#7 E:\project\advanced\backend\controllers\SiteController.php(78): backend\models\AdminLoginForm->login()
+#8 [internal function]: backend\controllers\SiteController->actionLogin()
+#9 E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 E:\project\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 E:\project\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('login', Array)
+#12 E:\project\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/login', Array)
+#13 E:\project\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 E:\project\advanced\backend\web\index.php(18): yii\base\Application->run()
+#15 {main}
+2017-04-07 13:09:05 [127.0.0.1][-][lmi8stpr6112lqsndlq01p3rv0][info][application] $_POST = [
+    '_csrf-backend' => 'VWNDT1lBSy46BwQOayAoeCAuDyAyKDsWGQh0LTEWCFgKKTccDnQ4Sg=='
+    'AdminLoginForm' => [
+        'username' => 'admin'
+        'password' => 'admin'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'be2cb5aa6fc719be3f226bd5c85db6b8ab6050f4775d8497558825f662a6bbd0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"odGA2acVuMLokip8Lk7bhWCv_JtSW5sd\";}'
+    'advanced-frontend' => 'avnkk0nfkpu8ti4d8u1ang1980'
+    '_csrf-frontend' => 'f80642eedeafc1606e6500b7e2a21abb59f5c9069002db22e7f3e90d569deb4da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"UiX5eOn7hiv9iPtWkUycoDilu4aOJRRM\";}'
+    'advanced-backend' => 'lmi8stpr6112lqsndlq01p3rv0'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '224'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://yii.com'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://yii.com/admin/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-backend=be2cb5aa6fc719be3f226bd5c85db6b8ab6050f4775d8497558825f662a6bbd0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22odGA2acVuMLokip8Lk7bhWCv_JtSW5sd%22%3B%7D; advanced-frontend=avnkk0nfkpu8ti4d8u1ang1980; _csrf-frontend=f80642eedeafc1606e6500b7e2a21abb59f5c9069002db22e7f3e90d569deb4da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22UiX5eOn7hiv9iPtWkUycoDilu4aOJRRM%22%3B%7D; advanced-backend=lmi8stpr6112lqsndlq01p3rv0'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\Lenovo;C:\\ProgramData\\Lenovo\\ReadyApps;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;D:\\TortoiseSVN\\bin;D:\\Git\\cmd;D:\\OpenVPN\\bin;C:\\Program Files\\OpenVPN\\bin;d:\\Program Files\\OpenVPN\\bin;D:\\fastKey;D:\\wamp\\bin\\php\\php-7.0.14ts;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at yii.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'yii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/project/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/project/advanced'
+    'SERVER_ADMIN' => 'knight@qq.com'
+    'SCRIPT_FILENAME' => 'E:/project/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '57062'
+    'REDIRECT_URL' => '/backend/web//site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/site/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491563345.674
+    'REQUEST_TIME' => 1491563345
+]
+2017-04-07 13:10:10 [127.0.0.1][-][eopd2sest4a7nu6eg2c52bhcc4][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Hash is invalid.' in E:\project\advanced\vendor\yiisoft\yii2\base\Security.php:639
+Stack trace:
+#0 E:\project\advanced\common\models\Adminuser.php(141): yii\base\Security->validatePassword('123456789', '501986411@qq.co...')
+#1 E:\project\advanced\backend\models\AdminLoginForm.php(46): common\models\Adminuser->validatePassword('123456789')
+#2 [internal function]: backend\models\AdminLoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator))
+#3 E:\project\advanced\vendor\yiisoft\yii2\validators\InlineValidator.php(72): call_user_func(Array, 'password', NULL, Object(yii\validators\InlineValidator))
+#4 E:\project\advanced\vendor\yiisoft\yii2\validators\Validator.php(267): yii\validators\InlineValidator->validateAttribute(Object(backend\models\AdminLoginForm), 'password')
+#5 E:\project\advanced\vendor\yiisoft\yii2\base\Model.php(358): yii\validators\Validator->validateAttributes(Object(backend\models\AdminLoginForm), Array)
+#6 E:\project\advanced\backend\models\AdminLoginForm.php(60): yii\base\Model->validate()
+#7 E:\project\advanced\backend\controllers\SiteController.php(78): backend\models\AdminLoginForm->login()
+#8 [internal function]: backend\controllers\SiteController->actionLogin()
+#9 E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 E:\project\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 E:\project\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('login', Array)
+#12 E:\project\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/login', Array)
+#13 E:\project\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 E:\project\advanced\backend\web\index.php(18): yii\base\Application->run()
+#15 {main}
+2017-04-07 13:10:10 [127.0.0.1][-][eopd2sest4a7nu6eg2c52bhcc4][info][application] $_POST = [
+    '_csrf-backend' => 'QmhZMDhabngtDB5xCjsNLjclFV9TMx5ADgNuUlANLQ4dIi1jb28dHA=='
+    'AdminLoginForm' => [
+        'username' => 'admin'
+        'password' => '123456789'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'be2cb5aa6fc719be3f226bd5c85db6b8ab6050f4775d8497558825f662a6bbd0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"odGA2acVuMLokip8Lk7bhWCv_JtSW5sd\";}'
+    'advanced-frontend' => 'avnkk0nfkpu8ti4d8u1ang1980'
+    '_csrf-frontend' => 'f80642eedeafc1606e6500b7e2a21abb59f5c9069002db22e7f3e90d569deb4da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"UiX5eOn7hiv9iPtWkUycoDilu4aOJRRM\";}'
+    'advanced-backend' => 'eopd2sest4a7nu6eg2c52bhcc4'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '228'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://yii.com'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://yii.com/admin/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-backend=be2cb5aa6fc719be3f226bd5c85db6b8ab6050f4775d8497558825f662a6bbd0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22odGA2acVuMLokip8Lk7bhWCv_JtSW5sd%22%3B%7D; advanced-frontend=avnkk0nfkpu8ti4d8u1ang1980; _csrf-frontend=f80642eedeafc1606e6500b7e2a21abb59f5c9069002db22e7f3e90d569deb4da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22UiX5eOn7hiv9iPtWkUycoDilu4aOJRRM%22%3B%7D; advanced-backend=eopd2sest4a7nu6eg2c52bhcc4'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\Lenovo;C:\\ProgramData\\Lenovo\\ReadyApps;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;D:\\TortoiseSVN\\bin;D:\\Git\\cmd;D:\\OpenVPN\\bin;C:\\Program Files\\OpenVPN\\bin;d:\\Program Files\\OpenVPN\\bin;D:\\fastKey;D:\\wamp\\bin\\php\\php-7.0.14ts;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at yii.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'yii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/project/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/project/advanced'
+    'SERVER_ADMIN' => 'knight@qq.com'
+    'SCRIPT_FILENAME' => 'E:/project/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '57102'
+    'REDIRECT_URL' => '/backend/web//site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/site/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491563410.146
+    'REQUEST_TIME' => 1491563410
+]
+2017-04-07 13:18:46 [127.0.0.1][-][3d2ip2c7gqjkkj5bmc0dgi5q42][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Hash is invalid.' in E:\project\advanced\vendor\yiisoft\yii2\base\Security.php:638
+Stack trace:
+#0 E:\project\advanced\common\models\Adminuser.php(141): yii\base\Security->validatePassword('123456789', '$13$iiKvSkKX3yl...')
+#1 E:\project\advanced\backend\models\AdminLoginForm.php(46): common\models\Adminuser->validatePassword('123456789')
+#2 [internal function]: backend\models\AdminLoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator))
+#3 E:\project\advanced\vendor\yiisoft\yii2\validators\InlineValidator.php(72): call_user_func(Array, 'password', NULL, Object(yii\validators\InlineValidator))
+#4 E:\project\advanced\vendor\yiisoft\yii2\validators\Validator.php(267): yii\validators\InlineValidator->validateAttribute(Object(backend\models\AdminLoginForm), 'password')
+#5 E:\project\advanced\vendor\yiisoft\yii2\base\Model.php(358): yii\validators\Validator->validateAttributes(Object(backend\models\AdminLoginForm), Array)
+#6 E:\project\advanced\backend\models\AdminLoginForm.php(60): yii\base\Model->validate()
+#7 E:\project\advanced\backend\controllers\SiteController.php(78): backend\models\AdminLoginForm->login()
+#8 [internal function]: backend\controllers\SiteController->actionLogin()
+#9 E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 E:\project\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 E:\project\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('login', Array)
+#12 E:\project\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/login', Array)
+#13 E:\project\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 E:\project\advanced\backend\web\index.php(18): yii\base\Application->run()
+#15 {main}
+2017-04-07 13:18:46 [127.0.0.1][-][3d2ip2c7gqjkkj5bmc0dgi5q42][info][application] $_POST = [
+    '_csrf-backend' => 'OUpGYmZPcUZWLgEjVC4SEEwHCg0NJgF.dSFxAA4YMjBmADIxMXoCIg=='
+    'AdminLoginForm' => [
+        'username' => 'adminuser'
+        'password' => '123456789'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'be2cb5aa6fc719be3f226bd5c85db6b8ab6050f4775d8497558825f662a6bbd0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"odGA2acVuMLokip8Lk7bhWCv_JtSW5sd\";}'
+    '_csrf-frontend' => 'f80642eedeafc1606e6500b7e2a21abb59f5c9069002db22e7f3e90d569deb4da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"UiX5eOn7hiv9iPtWkUycoDilu4aOJRRM\";}'
+    'advanced-frontend' => '6of1ubb2sjr0bc3h2dpdrnj3m6'
+    '_identity-frontend' => '8e3f2bfe75ba5a5ad40bf1bde0cb9f61e8129ac8a58adadf4638c991ac2e71bda:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[8,\"FM7VQISUtf76IMBZCDCeWtIAEUT9efxj\",2592000]\";}'
+    'advanced-backend' => '3d2ip2c7gqjkkj5bmc0dgi5q42'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '232'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://yii.com'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://yii.com/admin/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-backend=be2cb5aa6fc719be3f226bd5c85db6b8ab6050f4775d8497558825f662a6bbd0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22odGA2acVuMLokip8Lk7bhWCv_JtSW5sd%22%3B%7D; _csrf-frontend=f80642eedeafc1606e6500b7e2a21abb59f5c9069002db22e7f3e90d569deb4da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22UiX5eOn7hiv9iPtWkUycoDilu4aOJRRM%22%3B%7D; advanced-frontend=6of1ubb2sjr0bc3h2dpdrnj3m6; _identity-frontend=8e3f2bfe75ba5a5ad40bf1bde0cb9f61e8129ac8a58adadf4638c991ac2e71bda%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B8%2C%22FM7VQISUtf76IMBZCDCeWtIAEUT9efxj%22%2C2592000%5D%22%3B%7D; advanced-backend=3d2ip2c7gqjkkj5bmc0dgi5q42'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\Lenovo;C:\\ProgramData\\Lenovo\\ReadyApps;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;D:\\TortoiseSVN\\bin;D:\\Git\\cmd;D:\\OpenVPN\\bin;C:\\Program Files\\OpenVPN\\bin;d:\\Program Files\\OpenVPN\\bin;D:\\fastKey;D:\\wamp\\bin\\php\\php-7.0.14ts;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at yii.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'yii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/project/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/project/advanced'
+    'SERVER_ADMIN' => 'knight@qq.com'
+    'SCRIPT_FILENAME' => 'E:/project/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '57408'
+    'REDIRECT_URL' => '/backend/web//site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/site/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491563926.027
+    'REQUEST_TIME' => 1491563926
+]
+2017-04-07 13:18:57 [127.0.0.1][-][3d2ip2c7gqjkkj5bmc0dgi5q42][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Hash is invalid.' in E:\project\advanced\vendor\yiisoft\yii2\base\Security.php:639
+Stack trace:
+#0 E:\project\advanced\common\models\Adminuser.php(141): yii\base\Security->validatePassword('123456789', '$13$iiKvSkKX3yl...')
+#1 E:\project\advanced\backend\models\AdminLoginForm.php(46): common\models\Adminuser->validatePassword('123456789')
+#2 [internal function]: backend\models\AdminLoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator))
+#3 E:\project\advanced\vendor\yiisoft\yii2\validators\InlineValidator.php(72): call_user_func(Array, 'password', NULL, Object(yii\validators\InlineValidator))
+#4 E:\project\advanced\vendor\yiisoft\yii2\validators\Validator.php(267): yii\validators\InlineValidator->validateAttribute(Object(backend\models\AdminLoginForm), 'password')
+#5 E:\project\advanced\vendor\yiisoft\yii2\base\Model.php(358): yii\validators\Validator->validateAttributes(Object(backend\models\AdminLoginForm), Array)
+#6 E:\project\advanced\backend\models\AdminLoginForm.php(60): yii\base\Model->validate()
+#7 E:\project\advanced\backend\controllers\SiteController.php(78): backend\models\AdminLoginForm->login()
+#8 [internal function]: backend\controllers\SiteController->actionLogin()
+#9 E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 E:\project\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 E:\project\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('login', Array)
+#12 E:\project\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/login', Array)
+#13 E:\project\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 E:\project\advanced\backend\web\index.php(18): yii\base\Application->run()
+#15 {main}
+2017-04-07 13:18:57 [127.0.0.1][-][3d2ip2c7gqjkkj5bmc0dgi5q42][info][application] $_POST = [
+    '_csrf-backend' => 'OUpGYmZPcUZWLgEjVC4SEEwHCg0NJgF.dSFxAA4YMjBmADIxMXoCIg=='
+    'AdminLoginForm' => [
+        'username' => 'adminuser'
+        'password' => '123456789'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'be2cb5aa6fc719be3f226bd5c85db6b8ab6050f4775d8497558825f662a6bbd0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"odGA2acVuMLokip8Lk7bhWCv_JtSW5sd\";}'
+    '_csrf-frontend' => 'f80642eedeafc1606e6500b7e2a21abb59f5c9069002db22e7f3e90d569deb4da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"UiX5eOn7hiv9iPtWkUycoDilu4aOJRRM\";}'
+    'advanced-frontend' => '6of1ubb2sjr0bc3h2dpdrnj3m6'
+    '_identity-frontend' => '8e3f2bfe75ba5a5ad40bf1bde0cb9f61e8129ac8a58adadf4638c991ac2e71bda:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[8,\"FM7VQISUtf76IMBZCDCeWtIAEUT9efxj\",2592000]\";}'
+    'advanced-backend' => '3d2ip2c7gqjkkj5bmc0dgi5q42'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '232'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://yii.com'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://yii.com/admin/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-backend=be2cb5aa6fc719be3f226bd5c85db6b8ab6050f4775d8497558825f662a6bbd0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22odGA2acVuMLokip8Lk7bhWCv_JtSW5sd%22%3B%7D; _csrf-frontend=f80642eedeafc1606e6500b7e2a21abb59f5c9069002db22e7f3e90d569deb4da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22UiX5eOn7hiv9iPtWkUycoDilu4aOJRRM%22%3B%7D; advanced-frontend=6of1ubb2sjr0bc3h2dpdrnj3m6; _identity-frontend=8e3f2bfe75ba5a5ad40bf1bde0cb9f61e8129ac8a58adadf4638c991ac2e71bda%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B8%2C%22FM7VQISUtf76IMBZCDCeWtIAEUT9efxj%22%2C2592000%5D%22%3B%7D; advanced-backend=3d2ip2c7gqjkkj5bmc0dgi5q42'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\Lenovo;C:\\ProgramData\\Lenovo\\ReadyApps;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;D:\\TortoiseSVN\\bin;D:\\Git\\cmd;D:\\OpenVPN\\bin;C:\\Program Files\\OpenVPN\\bin;d:\\Program Files\\OpenVPN\\bin;D:\\fastKey;D:\\wamp\\bin\\php\\php-7.0.14ts;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at yii.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'yii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/project/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/project/advanced'
+    'SERVER_ADMIN' => 'knight@qq.com'
+    'SCRIPT_FILENAME' => 'E:/project/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '57423'
+    'REDIRECT_URL' => '/backend/web//site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/site/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491563937.72
+    'REQUEST_TIME' => 1491563937
+]
+2017-04-07 13:19:10 [127.0.0.1][-][3d2ip2c7gqjkkj5bmc0dgi5q42][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Hash is invalid.' in E:\project\advanced\vendor\yiisoft\yii2\base\Security.php:639
+Stack trace:
+#0 E:\project\advanced\common\models\Adminuser.php(141): yii\base\Security->validatePassword('123123', '$13$iiKvSkKX3yl...')
+#1 E:\project\advanced\backend\models\AdminLoginForm.php(46): common\models\Adminuser->validatePassword('123123')
+#2 [internal function]: backend\models\AdminLoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator))
+#3 E:\project\advanced\vendor\yiisoft\yii2\validators\InlineValidator.php(72): call_user_func(Array, 'password', NULL, Object(yii\validators\InlineValidator))
+#4 E:\project\advanced\vendor\yiisoft\yii2\validators\Validator.php(267): yii\validators\InlineValidator->validateAttribute(Object(backend\models\AdminLoginForm), 'password')
+#5 E:\project\advanced\vendor\yiisoft\yii2\base\Model.php(358): yii\validators\Validator->validateAttributes(Object(backend\models\AdminLoginForm), Array)
+#6 E:\project\advanced\backend\models\AdminLoginForm.php(60): yii\base\Model->validate()
+#7 E:\project\advanced\backend\controllers\SiteController.php(78): backend\models\AdminLoginForm->login()
+#8 [internal function]: backend\controllers\SiteController->actionLogin()
+#9 E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 E:\project\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 E:\project\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('login', Array)
+#12 E:\project\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/login', Array)
+#13 E:\project\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 E:\project\advanced\backend\web\index.php(18): yii\base\Application->run()
+#15 {main}
+2017-04-07 13:19:09 [127.0.0.1][-][3d2ip2c7gqjkkj5bmc0dgi5q42][info][application] $_POST = [
+    '_csrf-backend' => 'TENmZnR1bGMjJyEnRhQPNTkOKgkfHBxbAChRBBwiLxUTCRI1I0AfBw=='
+    'AdminLoginForm' => [
+        'username' => 'adminuser'
+        'password' => '123123'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'be2cb5aa6fc719be3f226bd5c85db6b8ab6050f4775d8497558825f662a6bbd0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"odGA2acVuMLokip8Lk7bhWCv_JtSW5sd\";}'
+    '_csrf-frontend' => 'f80642eedeafc1606e6500b7e2a21abb59f5c9069002db22e7f3e90d569deb4da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"UiX5eOn7hiv9iPtWkUycoDilu4aOJRRM\";}'
+    'advanced-frontend' => '6of1ubb2sjr0bc3h2dpdrnj3m6'
+    '_identity-frontend' => '8e3f2bfe75ba5a5ad40bf1bde0cb9f61e8129ac8a58adadf4638c991ac2e71bda:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[8,\"FM7VQISUtf76IMBZCDCeWtIAEUT9efxj\",2592000]\";}'
+    'advanced-backend' => '3d2ip2c7gqjkkj5bmc0dgi5q42'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '229'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://yii.com'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://yii.com/admin/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-backend=be2cb5aa6fc719be3f226bd5c85db6b8ab6050f4775d8497558825f662a6bbd0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22odGA2acVuMLokip8Lk7bhWCv_JtSW5sd%22%3B%7D; _csrf-frontend=f80642eedeafc1606e6500b7e2a21abb59f5c9069002db22e7f3e90d569deb4da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22UiX5eOn7hiv9iPtWkUycoDilu4aOJRRM%22%3B%7D; advanced-frontend=6of1ubb2sjr0bc3h2dpdrnj3m6; _identity-frontend=8e3f2bfe75ba5a5ad40bf1bde0cb9f61e8129ac8a58adadf4638c991ac2e71bda%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B8%2C%22FM7VQISUtf76IMBZCDCeWtIAEUT9efxj%22%2C2592000%5D%22%3B%7D; advanced-backend=3d2ip2c7gqjkkj5bmc0dgi5q42'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\Lenovo;C:\\ProgramData\\Lenovo\\ReadyApps;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;D:\\TortoiseSVN\\bin;D:\\Git\\cmd;D:\\OpenVPN\\bin;C:\\Program Files\\OpenVPN\\bin;d:\\Program Files\\OpenVPN\\bin;D:\\fastKey;D:\\wamp\\bin\\php\\php-7.0.14ts;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at yii.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'yii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/project/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/project/advanced'
+    'SERVER_ADMIN' => 'knight@qq.com'
+    'SCRIPT_FILENAME' => 'E:/project/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '57429'
+    'REDIRECT_URL' => '/backend/web//site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/site/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491563949.937
+    'REQUEST_TIME' => 1491563949
+]
+2017-04-07 13:20:28 [127.0.0.1][-][3d2ip2c7gqjkkj5bmc0dgi5q42][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Hash is invalid.' in E:\project\advanced\vendor\yiisoft\yii2\base\Security.php:639
+Stack trace:
+#0 E:\project\advanced\common\models\Adminuser.php(141): yii\base\Security->validatePassword('123456789', '$13$iiKvSkKX3yl...')
+#1 E:\project\advanced\backend\models\AdminLoginForm.php(46): common\models\Adminuser->validatePassword('123456789')
+#2 [internal function]: backend\models\AdminLoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator))
+#3 E:\project\advanced\vendor\yiisoft\yii2\validators\InlineValidator.php(72): call_user_func(Array, 'password', NULL, Object(yii\validators\InlineValidator))
+#4 E:\project\advanced\vendor\yiisoft\yii2\validators\Validator.php(267): yii\validators\InlineValidator->validateAttribute(Object(backend\models\AdminLoginForm), 'password')
+#5 E:\project\advanced\vendor\yiisoft\yii2\base\Model.php(358): yii\validators\Validator->validateAttributes(Object(backend\models\AdminLoginForm), Array)
+#6 E:\project\advanced\backend\models\AdminLoginForm.php(60): yii\base\Model->validate()
+#7 E:\project\advanced\backend\controllers\SiteController.php(78): backend\models\AdminLoginForm->login()
+#8 [internal function]: backend\controllers\SiteController->actionLogin()
+#9 E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 E:\project\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 E:\project\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('login', Array)
+#12 E:\project\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('site/login', Array)
+#13 E:\project\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 E:\project\advanced\backend\web\index.php(18): yii\base\Application->run()
+#15 {main}
+2017-04-07 13:20:28 [127.0.0.1][-][3d2ip2c7gqjkkj5bmc0dgi5q42][info][application] $_POST = [
+    '_csrf-backend' => 'Ui5hMVVqZTQ9SiZwZwsGYidjLV4.AxUMHkVWUz09JkINZBViAl8WUA=='
+    'AdminLoginForm' => [
+        'username' => 'adminuser'
+        'password' => '123456789'
+        'rememberMe' => '1'
+    ]
+    'login-button' => ''
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'be2cb5aa6fc719be3f226bd5c85db6b8ab6050f4775d8497558825f662a6bbd0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"odGA2acVuMLokip8Lk7bhWCv_JtSW5sd\";}'
+    '_csrf-frontend' => 'f80642eedeafc1606e6500b7e2a21abb59f5c9069002db22e7f3e90d569deb4da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"UiX5eOn7hiv9iPtWkUycoDilu4aOJRRM\";}'
+    'advanced-frontend' => '6of1ubb2sjr0bc3h2dpdrnj3m6'
+    '_identity-frontend' => '8e3f2bfe75ba5a5ad40bf1bde0cb9f61e8129ac8a58adadf4638c991ac2e71bda:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[8,\"FM7VQISUtf76IMBZCDCeWtIAEUT9efxj\",2592000]\";}'
+    'advanced-backend' => '3d2ip2c7gqjkkj5bmc0dgi5q42'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/admin'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '232'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://yii.com'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://yii.com/admin/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-backend=be2cb5aa6fc719be3f226bd5c85db6b8ab6050f4775d8497558825f662a6bbd0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22odGA2acVuMLokip8Lk7bhWCv_JtSW5sd%22%3B%7D; _csrf-frontend=f80642eedeafc1606e6500b7e2a21abb59f5c9069002db22e7f3e90d569deb4da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22UiX5eOn7hiv9iPtWkUycoDilu4aOJRRM%22%3B%7D; advanced-frontend=6of1ubb2sjr0bc3h2dpdrnj3m6; _identity-frontend=8e3f2bfe75ba5a5ad40bf1bde0cb9f61e8129ac8a58adadf4638c991ac2e71bda%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B8%2C%22FM7VQISUtf76IMBZCDCeWtIAEUT9efxj%22%2C2592000%5D%22%3B%7D; advanced-backend=3d2ip2c7gqjkkj5bmc0dgi5q42'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\Lenovo;C:\\ProgramData\\Lenovo\\ReadyApps;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;D:\\TortoiseSVN\\bin;D:\\Git\\cmd;D:\\OpenVPN\\bin;C:\\Program Files\\OpenVPN\\bin;d:\\Program Files\\OpenVPN\\bin;D:\\fastKey;D:\\wamp\\bin\\php\\php-7.0.14ts;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at yii.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'yii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/project/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/project/advanced'
+    'SERVER_ADMIN' => 'knight@qq.com'
+    'SCRIPT_FILENAME' => 'E:/project/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '57462'
+    'REDIRECT_URL' => '/backend/web//site/login'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/site/login'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491564028.689
+    'REQUEST_TIME' => 1491564028
+]
+2017-04-07 13:28:36 [127.0.0.1][-][-][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: common\models\Adminuser::generateAuthKey()' in E:\project\advanced\vendor\yiisoft\yii2\base\Component.php:290
+Stack trace:
+#0 E:\project\advanced\common\models\Adminuser.php(168): yii\base\Component->__call('generateAuthKey', Array)
+#1 E:\project\advanced\common\models\Adminuser.php(168): common\models\Adminuser->generateAuthKey()
+#2 E:\project\advanced\backend\controllers\AdminuserController.php(75): common\models\Adminuser->register()
+#3 [internal function]: backend\controllers\AdminuserController->actionCreate()
+#4 E:\project\advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 E:\project\advanced\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#6 E:\project\advanced\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('create', Array)
+#7 E:\project\advanced\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('adminuser/creat...', Array)
+#8 E:\project\advanced\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 E:\project\advanced\backend\web\index.php(18): yii\base\Application->run()
+#10 {main}
+2017-04-07 13:28:35 [127.0.0.1][-][-][info][application] $_POST = [
+    '_csrf-backend' => 'ZS4zUDNXY1AKSnQRATYABhBjfz9YPhNoKUUEMlsAICY6ZEcDZGIQNA=='
+    'Adminuser' => [
+        'username' => 'asdasd'
+        'nickname' => 'asdasd'
+        'password' => '123456789'
+        'email' => 'asdasd@qq.com'
+        'profile' => 'asdasdasd'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'be2cb5aa6fc719be3f226bd5c85db6b8ab6050f4775d8497558825f662a6bbd0a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"odGA2acVuMLokip8Lk7bhWCv_JtSW5sd\";}'
+    '_csrf-frontend' => 'f80642eedeafc1606e6500b7e2a21abb59f5c9069002db22e7f3e90d569deb4da:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"UiX5eOn7hiv9iPtWkUycoDilu4aOJRRM\";}'
+    'advanced-frontend' => 'eo1m7uiefeumd33aaqd9ch4lr6'
+    'advanced-backend' => 'cnrage25vl2i4hdgr9tladslo4'
+]
+
+$_SERVER = [
+    'REDIRECT_REDIRECT_STATUS' => '200'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'yii.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '240'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://yii.com'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.98 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://yii.com/admin/adminuser/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => '_csrf-backend=be2cb5aa6fc719be3f226bd5c85db6b8ab6050f4775d8497558825f662a6bbd0a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22odGA2acVuMLokip8Lk7bhWCv_JtSW5sd%22%3B%7D; _csrf-frontend=f80642eedeafc1606e6500b7e2a21abb59f5c9069002db22e7f3e90d569deb4da%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22UiX5eOn7hiv9iPtWkUycoDilu4aOJRRM%22%3B%7D; advanced-frontend=eo1m7uiefeumd33aaqd9ch4lr6; advanced-backend=cnrage25vl2i4hdgr9tladslo4'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\ATI Technologies\\ATI.ACE\\Core-Static;C:\\Program Files (x86)\\Common Files\\Lenovo;C:\\ProgramData\\Lenovo\\ReadyApps;C:\\Program Files (x86)\\AMD\\ATI.ACE\\Core-Static;D:\\TortoiseSVN\\bin;D:\\Git\\cmd;D:\\OpenVPN\\bin;C:\\Program Files\\OpenVPN\\bin;d:\\Program Files\\OpenVPN\\bin;D:\\fastKey;D:\\wamp\\bin\\php\\php-7.0.14ts;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at yii.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'yii.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'E:/project/advanced'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/project/advanced'
+    'SERVER_ADMIN' => 'knight@qq.com'
+    'SCRIPT_FILENAME' => 'E:/project/advanced/backend/web/index.php'
+    'REMOTE_PORT' => '57797'
+    'REDIRECT_URL' => '/backend/web//adminuser/create'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/admin/adminuser/create'
+    'SCRIPT_NAME' => '/backend/web/index.php'
+    'PHP_SELF' => '/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1491564515.082
+    'REQUEST_TIME' => 1491564515
+]

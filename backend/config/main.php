@@ -17,9 +17,10 @@ return [
         'request' => [
             'csrfParam' => '_csrf-backend',
             'baseUrl'=>'/admin',
+            'cookieValidationKey' => 'v216s6WPcutsJ5I16AjCeOzWjkPIg_Hw',
         ],
         'user' => [
-            'identityClass' => 'common\models\User',
+            'identityClass' => 'common\models\Adminuser',
             'enableAutoLogin' => true,
             'identityCookie' => ['name' => '_identity-backend', 'httpOnly' => true],
         ],

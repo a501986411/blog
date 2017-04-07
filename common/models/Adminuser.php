@@ -1,11 +1,9 @@
 <?php
-
-namespace common\models;
-
-use Yii;
-use yii\base\NotSupportedException;
-use yii\db\ActiveRecord;
-use yii\web\IdentityInterface;
+    namespace common\models;
+    use Yii;
+    use yii\base\NotSupportedException;
+    use yii\db\ActiveRecord;
+    use yii\web\IdentityInterface;
 /**
  * This is the model class for table "adminuser".
  *
@@ -13,6 +11,7 @@ use yii\web\IdentityInterface;
  * @property string $username
  * @property string $nickname
  * @property string $password
+ * @property string $auth_key
  * @property string $email
  * @property string $profile
  * @property string $create_time
@@ -94,7 +93,7 @@ class Adminuser extends ActiveRecord implements IdentityInterface
      */
     public static function findIdentity($id)
     {
-        return static::findOne(['id' => $id, 'status' => self::STATUS_ACTIVE]);
+        return static::findOne(['id' => $id]);
     }
 
     /**
@@ -142,7 +141,13 @@ class Adminuser extends ActiveRecord implements IdentityInterface
         return Yii::$app->security->validatePassword($password, $this->password);
     }
 
-
+    /**
+     * Generates "remember me" authentication key
+     */
+    public function generateAuthKey()
+    {
+        $this->auth_key = Yii::$app->security->generateRandomString();
+    }
     /**
      * 加密密码
      * @access public
@@ -166,6 +171,7 @@ class Adminuser extends ActiveRecord implements IdentityInterface
         }
         $this->_tmppassword = $this->password;
         $this->setPassword();
+        $this->generateAuthKey();
         if($this->save()){
             return true;
         }
