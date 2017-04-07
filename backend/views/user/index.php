@@ -22,6 +22,12 @@ $this->params['breadcrumbs'][] = $this->title;
             'id',
             'username',
             'email:email',
+            [
+                'attribute'=>'status',
+                'value'=>function($model){
+                        return  $model->getStatus()[$model->status];
+                }
+            ],
             ['class' => 'yii\grid\ActionColumn'],
         ],
     ]); ?>

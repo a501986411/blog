@@ -69,6 +69,7 @@
 			return [
 				['status', 'default', 'value' => self::STATUS_ACTIVE],
 				['status', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_DELETED]],
+				['username','required']
 			];
 		}
 
@@ -203,5 +204,13 @@
 		public function removePasswordResetToken()
 		{
 			$this->password_reset_token = null;
+		}
+
+		/**
+		 * 获取用户状态数组
+		 */
+		public function getStatus()
+		{
+			return [0=>'已删除',10=>'正常'];
 		}
 	}
